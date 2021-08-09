@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<Datatabletime xmlns="http://tempuri.org/Datatabletime.xsd">
+  <TimeTable>
+    <Id>3</Id>
+    <Name>Vinh</Name>
+    <Hour>8h</Hour>
+    <Date>31/05/2021</Date>
+  </TimeTable>
+  <TimeTable>
+    <Id>4</Id>
+    <Name>Nam</Name>
+    <Hour>9h</Hour>
+    <Date>30/08/2021</Date>
+  </TimeTable>
+  <TimeTable>
+    <Id>5</Id>
+    <Name>Khanh</Name>
+    <Hour>6h</Hour>
+    <Date>25/5/2021</Date>
+  </TimeTable>
+  <TimeTable>
+    <Id>6</Id>
+    <Name>Phuc</Name>
+    <Hour>8h-10h</Hour>
+    <Date>15/06/2021</Date>
+  </TimeTable>
+  <TimeTable>
+    <Id>7</Id>
+  </TimeTable>
+</Datatabletime>

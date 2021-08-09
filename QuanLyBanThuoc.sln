@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanThuoc", "QuanLyBanThuoc\QuanLyBanThuoc.csproj", "{20207504-5FF6-4E4D-9E35-B7551E32BD9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20207504-5FF6-4E4D-9E35-B7551E32BD9F}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{20207504-5FF6-4E4D-9E35-B7551E32BD9F}.All|Any CPU.Build.0 = Release|Any CPU
+		{20207504-5FF6-4E4D-9E35-B7551E32BD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20207504-5FF6-4E4D-9E35-B7551E32BD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20207504-5FF6-4E4D-9E35-B7551E32BD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20207504-5FF6-4E4D-9E35-B7551E32BD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C86FB81E-A8C4-4184-BB41-E48A85D7BF79}
+	EndGlobalSection
+EndGlobal
