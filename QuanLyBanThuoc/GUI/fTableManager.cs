@@ -100,7 +100,7 @@ namespace QuanLyBanThuoc
             //  CultureInfo culture = new CultureInfo("vi-VN");
 
             //Thread.CurrentThread.CurrentCulture = culture;
-            txbTotalPrice.Text = totalPrice.ToString();
+            txbTotalPrice.Text =  string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}",totalPrice) + "đ";
             // LoadTable();
         }
         void Btn_Click(object sender, EventArgs e)
@@ -270,8 +270,6 @@ namespace QuanLyBanThuoc
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
 
-
-
             Table table = lsvBill.Tag as Table;
             if (table == null) return;
             int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.Id);
@@ -281,12 +279,14 @@ namespace QuanLyBanThuoc
             finalTotalPriceforLeftover = finalTotalPrice;
             if (idBill != -1)
             {
-                if (MessageBox.Show(string.Format("Bạn có chắc thanh toán hóa đơn cho bàn {0}\nTổng tiền - (Tổng tiền / 100) x Giảm giá\n=> {1} - ({1} / 100) x {2} = {3}", table.Name, totalPrice, discount, finalTotalPrice), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                MyMessageBox.ShowMessage(string.Format("Bạn có chắc thanh toán hóa đơn cho bàn {0}",table.Name), "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (frmMessageYesNo.messageCheck == true)
                 {
+                    frmMessageYesNo.messageCheck = false;
                     BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     ShowBill(table.Id);
                     LoadTable();
-                    btnCaculateLeftOver.PerformClick();
+                    CaculateLeftOver(discount,totalPrice,finalTotalPrice,idBill);
                 }
             }
 
@@ -316,9 +316,10 @@ namespace QuanLyBanThuoc
             f.ShowDialog();
             this.Show();
         }
-        private void btnCaculateLeftOver_Click(object sender, EventArgs e)
+       
+        private void CaculateLeftOver(double discount, double totalPrice,double finalTotalPrice,int idBill)
         {
-            fCalculateLeftover f = new fCalculateLeftover(finalTotalPriceforLeftover);
+            fCalculateLeftover f = new fCalculateLeftover(discount, totalPrice, finalTotalPrice, idBill);
             f.ShowDialog();
         }
         private void invoiceDetailsToolStripMenuItem_Click(object sender, EventArgs e)

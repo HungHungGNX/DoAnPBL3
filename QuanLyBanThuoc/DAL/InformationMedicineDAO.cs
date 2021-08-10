@@ -39,7 +39,7 @@ namespace QuanLyBanThuoc.DAL
         public DataSet GetListMedicineBestByMonth(string month, string dayOfMonth, string year)
         {
             if (Convert.ToInt32(month) <= 9) month = "0" + month;
-            string s =String.Format("SELECT IdMedicine as 'Mã Thuốc',m.Name as 'Tên Thuốc',COUNT(b.Id) as 'Số Lượng Hóa Đơn' FROM dbo.BillInfo as b,dbo.Medicine as m,dbo.Bill as bi Where bi.Id = b.IdBill AND b.IdMedicine = m.Id AND DateCheckIn > '{0}{1}{2}' AND DateCheckIn < '{3}{4}{5}' GROUP BY IdMedicine,Name Order by[Số Lượng Hóa Đơn] DESC", year, month, "01", year, month, dayOfMonth);
+            string s =String.Format("SELECT IdMedicine as 'Mã Thuốc',m.Name as 'Tên Thuốc',COUNT(b.Id) as 'Số Lượng Hóa Đơn' FROM dbo.BillInfo as b,dbo.Medicine as m,dbo.Bill as bi Where bi.Id = b.IdBill AND b.IdMedicine = m.Id AND DateCheckIn >= '{0}{1}{2}' AND DateCheckIn <= '{3}{4}{5}' GROUP BY IdMedicine,Name Order by[Số Lượng Hóa Đơn] DESC", year, month, "01", year, month, dayOfMonth);
             SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
             DataSet ds = new DataSet();
             adapter.Fill(ds);
@@ -77,15 +77,15 @@ namespace QuanLyBanThuoc.DAL
             adapter.Fill(ds);
             return ds;
         }
-        public int GetTotalMonth(string month, string dayOfMonth, string year)
+        public double GetTotalMonth(string month, string dayOfMonth, string year)
         {
             /*string s;
             if (Convert.ToInt32(month) > 9) s = "select Sum(TotalPrice) from dbo.Bill where DateCheckIn > '2021" + month + "01'AND DateCheckIn < '2021" + month + "30'";
             else s = "select Sum(TotalPrice) from dbo.Bill where DateCheckIn > '20210" + month + "01'AND DateCheckIn < '20210" + month + "30'";*/
             if (Convert.ToInt32(month) <= 9) month = "0" + month;
-            string s = string.Format("select Sum(TotalPrice) from dbo.Bill where DateCheckIn > '{0}{1}{2}' AND DateCheckIn < '{3}{4}{5}'", year, month, "01", year, month, dayOfMonth);
+            string s = string.Format("select Sum(TotalPrice) from dbo.Bill where DateCheckIn >= '{0}{1}{2}' AND DateCheckIn <= '{3}{4}{5}'", year, month, "01", year, month, dayOfMonth);
             /* string s = string.Format("UPDATE dbo.MedicineCategory SET Name = N'{0}' WHERE Id = {1}", month, id);*/
-            int n = 0;
+            double n = 0;
         /*    if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -97,8 +97,7 @@ namespace QuanLyBanThuoc.DAL
             try
             {
                 object ob = DataProvider.Instance.ExcuteScalar(s);
-                n = Convert.ToInt32(ob);
-                connection.Close();
+                n = Convert.ToDouble(ob);
                 return n;
             }
             catch

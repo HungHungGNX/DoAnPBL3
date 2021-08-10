@@ -86,7 +86,6 @@ namespace QuanLyBanThuoc.DAL
                 "m,dbo.Bill as b,dbo.TableMedicine as t, dbo.BillInfo as bi" +
                 " where b.Status = 0 AND b.IdTable = {0} AND b.Id = bi.IdBill AND bi.IdMedicine = m.Id", idTable);
             DataTable table = DataProvider.Instance.ExcuteQuery(query);
-
             foreach (DataRow item in table.Rows)
             {
                 MyHash.Add((int)item["Id"], (int)item["count"]);

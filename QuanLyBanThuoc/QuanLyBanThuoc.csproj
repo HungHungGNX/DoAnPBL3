@@ -244,6 +244,12 @@
     <Compile Include="GUI\fCheck.Designer.cs">
       <DependentUpon>fCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\fInformationAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fInformationAccount.Designer.cs">
+      <DependentUpon>fInformationAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fInvoiceDeatils.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -355,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fCheck.resx">
       <DependentUpon>fCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fInformationAccount.resx">
+      <DependentUpon>fInformationAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fInvoiceDeatils.resx">
       <DependentUpon>fInvoiceDeatils.cs</DependentUpon>

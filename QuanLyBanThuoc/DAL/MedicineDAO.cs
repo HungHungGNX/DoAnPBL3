@@ -130,5 +130,13 @@ namespace QuanLyBanThuoc.DAL
 
             return list;
         }
+        public double GetTotalMoneyStore()
+        {
+            double money = 0;
+            string query = string.Format("select Sum(Price*Quantity) from dbo.Medicine ");
+            object ob = DataProvider.Instance.ExcuteScalar(query);
+            money = Convert.ToDouble(ob);
+           return money;
+        }
     }
 }

@@ -50,7 +50,6 @@ namespace QuanLyBanThuoc
         private void fLogin_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
-      
         }
 
         private void txbPassWord_MouseClick(object sender, MouseEventArgs e)
@@ -59,11 +58,13 @@ namespace QuanLyBanThuoc
             Account loginAccount = AccountDAO.Instance.GetAccountByUserName(txbUserName.Text);
             if (loginAccount == null)
             {
-                MessageBox.Show("Account is non-existent");
+                MyMessageBox.ShowMessage("Account is non-existent", "Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             else { 
             Winform.main = new fMain(loginAccount);}
         }
+
+        
     }
 }

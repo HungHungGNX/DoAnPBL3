@@ -42,7 +42,7 @@ namespace QuanLyBanThuoc.GUI
                 table.Columns.Add("Month", typeof(string));
                 table.Columns.Add("Total", typeof(int));
             }
-            int total = InformationMedicineDAO.Instance.GetTotalMonth(txbMonth.Text, dayOfMonth + "", year + "");
+            double total = InformationMedicineDAO.Instance.GetTotalMonth(txbMonth.Text, dayOfMonth + "", year + "");
             table.Rows.Add("Tháng " + txbMonth.Text, total);
             pngOk.Visible = true;
         }

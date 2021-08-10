@@ -39,7 +39,6 @@ namespace QuanLyBanThuoc
             this.btnAddMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnCaculateLeftOver = new System.Windows.Forms.Button();
             this.txbTotalPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnCheckOut = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDiscount = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -195,7 +194,6 @@ namespace QuanLyBanThuoc
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.btnDelete);
-            this.panel3.Controls.Add(this.btnCaculateLeftOver);
             this.panel3.Controls.Add(this.txbTotalPrice);
             this.panel3.Controls.Add(this.btnCheckOut);
             this.panel3.Controls.Add(this.btnDiscount);
@@ -226,23 +224,6 @@ namespace QuanLyBanThuoc
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnCaculateLeftOver
-            // 
-            this.btnCaculateLeftOver.FlatAppearance.BorderSize = 0;
-            this.btnCaculateLeftOver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaculateLeftOver.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaculateLeftOver.ForeColor = System.Drawing.Color.White;
-            this.btnCaculateLeftOver.Image = ((System.Drawing.Image)(resources.GetObject("btnCaculateLeftOver.Image")));
-            this.btnCaculateLeftOver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaculateLeftOver.Location = new System.Drawing.Point(303, 83);
-            this.btnCaculateLeftOver.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCaculateLeftOver.Name = "btnCaculateLeftOver";
-            this.btnCaculateLeftOver.Size = new System.Drawing.Size(50, 36);
-            this.btnCaculateLeftOver.TabIndex = 12;
-            this.btnCaculateLeftOver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCaculateLeftOver.UseVisualStyleBackColor = true;
-            this.btnCaculateLeftOver.Click += new System.EventHandler(this.btnCaculateLeftOver_Click);
             // 
             // txbTotalPrice
             // 
@@ -602,7 +583,6 @@ namespace QuanLyBanThuoc
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private Guna.UI2.WinForms.Guna2GradientButton btnDiscount;
         private System.Windows.Forms.ToolStripMenuItem informationMedicineToolStripMenuItem;
-        private System.Windows.Forms.Button btnCaculateLeftOver;
         private System.Windows.Forms.ToolStripMenuItem invoiceDetailsToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private System.Windows.Forms.ToolStripMenuItem btnHelp;

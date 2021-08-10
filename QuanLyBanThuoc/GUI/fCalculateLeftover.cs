@@ -8,17 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyBanThuoc.GUI;
+using QuanLyBanThuoc.DAL;
 namespace QuanLyBanThuoc.GUI
 {
     public partial class fCalculateLeftover : Form
     {
         double finalTotalPrice = 0;
 
-        public fCalculateLeftover(double money)
+        public fCalculateLeftover(double discount, double totalPrice, double finalTotalPrice, int idBill)
         {
             InitializeComponent();
-            finalTotalPrice = money;
-            lblMoney.Text = money.ToString();
+            this.finalTotalPrice = finalTotalPrice;
+            lblMoney.Text = finalTotalPrice.ToString();
+            lblDiscount.Text = discount.ToString()+"%";
+            lblMoneyBeforeDiscount.Text = totalPrice.ToString();
+            dtgvBillInfo.DataSource = BillInfoDAO.Instance.GetBillInfoByIdBill(idBill);
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -31,8 +35,8 @@ namespace QuanLyBanThuoc.GUI
             {
                 MessageBox.Show("Số liệu nhập vào không đúng");
             }
-            double result = temp - finalTotalPrice;
-            txbResult.Text = result.ToString();
+       
+            lblResult.Text =(temp - finalTotalPrice).ToString();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -35,7 +35,7 @@ namespace QuanLyBanThuoc.GUI
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnAccount = new System.Windows.Forms.Button();
             this.btnTimeTable = new System.Windows.Forms.Button();
             this.btnPhone = new System.Windows.Forms.Button();
             this.btnDiagram = new System.Windows.Forms.Button();
@@ -83,7 +83,7 @@ namespace QuanLyBanThuoc.GUI
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.SidePanel);
-            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnTimeTable);
             this.panel1.Controls.Add(this.btnPhone);
             this.panel1.Controls.Add(this.btnDiagram);
@@ -118,22 +118,23 @@ namespace QuanLyBanThuoc.GUI
             this.SidePanel.Size = new System.Drawing.Size(13, 66);
             this.SidePanel.TabIndex = 13;
             // 
-            // button14
+            // btnAccount
             // 
-            this.guna2Transition1.SetDecoration(this.button14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(4, 673);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(48, 42);
-            this.button14.TabIndex = 12;
-            this.button14.Text = "?";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = true;
+            this.guna2Transition1.SetDecoration(this.btnAccount, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btnAccount.FlatAppearance.BorderSize = 0;
+            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.ForeColor = System.Drawing.Color.White;
+            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccount.Location = new System.Drawing.Point(4, 673);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(48, 42);
+            this.btnAccount.TabIndex = 12;
+            this.btnAccount.Text = "?";
+            this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAccount.UseVisualStyleBackColor = true;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnTimeTable
             // 
@@ -630,7 +631,7 @@ namespace QuanLyBanThuoc.GUI
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel SidePanel;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnTimeTable;
         private System.Windows.Forms.Button btnPhone;
         private System.Windows.Forms.Button btnDiagram;

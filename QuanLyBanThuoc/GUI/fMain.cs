@@ -25,7 +25,6 @@ namespace QuanLyBanThuoc.GUI
         }
         private void fMain_Load(object sender, EventArgs e)
         {
-            Winform.tableManager = new fTableManager(account);
             guna2AnimateWindow1.SetAnimateWindow(Winform.tableManager, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
         }
 
@@ -51,7 +50,7 @@ namespace QuanLyBanThuoc.GUI
 
         private void btnSales_Click(object sender, EventArgs e)
         {
-           
+            Winform.tableManager = new fTableManager(account);
             this.Hide();
             Winform.tableManager.ShowDialog();
             this.Show();
@@ -104,5 +103,13 @@ namespace QuanLyBanThuoc.GUI
             guna2Transition1.ShowSync(mySixTimeTable1);
         }
 
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            fInformationAccount f = new fInformationAccount(account);
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+
+        }
     }
 }
