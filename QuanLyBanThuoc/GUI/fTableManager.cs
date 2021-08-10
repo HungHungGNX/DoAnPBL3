@@ -184,19 +184,19 @@ namespace QuanLyBanThuoc
 
 
             Table table = lsvBill.Tag as Table;
-            if (table == null) { MessageBox.Show("You have not selected table!"); return; }
+            if (table == null) {MessageBoxOfMe("You have not selected table!");  return; }
             int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.Id);
             int medicineId = (cbMedicine.SelectedItem as Medicine).Id;
             Medicine medicineSelected = MedicineDAO.Instance.GetMedicineById(medicineId);
             int count = (int)nmMedicineCount.Value;
-            if (medicineSelected.Quantity == 0 && (int)nmMedicineCount.Value > 0) { MessageBox.Show("Thuốc " + medicineSelected.Name + " đã hết"); return; }
-            if (medicineSelected.Quantity < count) { MessageBox.Show("Không đủ thuốc " + medicineSelected.Name + " để bán"); return; }
+            if (medicineSelected.Quantity == 0 && (int)nmMedicineCount.Value > 0) { MessageBoxOfMe("Thuốc " + medicineSelected.Name + " đã hết"); return; }
+            if (medicineSelected.Quantity < count) { MessageBoxOfMe("Không đủ thuốc " + medicineSelected.Name + " để bán"); return; }
             if (count == 0) return;
             if (table.Status == "Trống" && count < 0) return;
             if (checkTableContainerMedicine(table.Id, medicineId) == false && count < 0) return;
             if ( count<0 && checkTableContainerMedicineOfListAndCount(table.Id, medicineId,count)==true )
             {
-                MessageBox.Show("Không hợp lệ");
+                MessageBoxOfMe("Không hợp lệ");
                 return;
             }
             if (idBill == -1)
@@ -214,20 +214,24 @@ namespace QuanLyBanThuoc
 
 
         }
+        void MessageBoxOfMe(string Text)
+        {
+            MyMessageBox.ShowMessage(Text, "Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         public void AddMedicineToSick(String[] listMedicine)
         {
             int tableById = 0;
             foreach (string item in listMedicine)
             {
                 Table table = lsvBill.Tag as Table;
-                if (table == null) { MessageBox.Show("You have not selected table!"); return; }
+                if (table == null) { MessageBoxOfMe("You have not selected table!"); return; }
                 tableById = table.Id;
                 int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.Id);
                 Medicine medicineSelected = MedicineDAO.Instance.GetMedicineByName(item);
-                if (medicineSelected == null) { MessageBox.Show("Thuốc " + item + " chưa có trong shop"); continue; }
+                if (medicineSelected == null) { MessageBoxOfMe("Thuốc " + item + " chưa có trong shop"); continue; }
                 int medicineId = medicineSelected.Id;
                 int count = 1;
-                if (medicineSelected.Quantity == 0) { MessageBox.Show("Thuốc " + medicineSelected.Name + " đã hết"); continue; }
+                if (medicineSelected.Quantity == 0) { MessageBoxOfMe("Thuốc " + medicineSelected.Name + " đã hết"); continue; }
 
                 if (idBill == -1)
                 {
@@ -290,12 +294,16 @@ namespace QuanLyBanThuoc
         }
         private void btnSwitchTable_Click(object sender, EventArgs e)
         {
-
-            int id1 = (lsvBill.Tag as Table).Id;
-
+            int id1 = 0;
+            if (lsvBill.Tag as Table == null) return;
+             id1 = (lsvBill.Tag as Table).Id;
+            
+          
             int id2 = (cbSwitchTable.SelectedItem as Table).Id;
-            if (MessageBox.Show(string.Format("Bạn có thật sự muốn chuyển bàn {0} qua bàn {1}", (lsvBill.Tag as Table).Name, (cbSwitchTable.SelectedItem as Table).Name), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            MyMessageBox.ShowMessage(string.Format("Bạn có thật sự muốn chuyển bàn {0} qua bàn {1}", (lsvBill.Tag as Table).Name, (cbSwitchTable.SelectedItem as Table).Name), "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (frmMessageYesNo.messageCheck==true)
             {
+                frmMessageYesNo.messageCheck = false;
                 TableDAO.Instance.SwitchTable(id1, id2);
 
                 LoadTable();

@@ -365,3 +365,5 @@ E:\QuanLyDoAn\QuanLyTiemThuoc\QuanLyBanThuoc\bin\Debug\Bunifu.UI.WinForms.Bunifu
 E:\QuanLyDoAn\QuanLyTiemThuoc\QuanLyBanThuoc\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 E:\QuanLyDoAn\QuanLyTiemThuoc\QuanLyBanThuoc\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 E:\QuanLyDoAn\QuanLyTiemThuoc\QuanLyBanThuoc\obj\Debug\QuanLyBanThuoc.exe.licenses
+E:\QuanLyDoAn\QuanLyTiemThuoc\QuanLyBanThuoc\obj\Debug\QuanLyBanThuoc.GUI.frmMessageYesNo.resources
+E:\QuanLyDoAn\QuanLyTiemThuoc\QuanLyBanThuoc\obj\Debug\QuanLyBanThuoc.GUI.frmMessageOK.resources

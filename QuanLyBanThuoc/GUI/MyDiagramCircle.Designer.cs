@@ -64,7 +64,7 @@ namespace QuanLyBanThuoc.GUI
             this.guna2Transition1.SetDecoration(this.chart1, Guna.UI2.AnimatorNS.DecorationType.None);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(3, -15);
+            this.chart1.Location = new System.Drawing.Point(3, 24);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -76,7 +76,7 @@ namespace QuanLyBanThuoc.GUI
             series1.Name = "Turnover";
             series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(602, 454);
+            this.chart1.Size = new System.Drawing.Size(576, 397);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             this.chart1.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.Normal;

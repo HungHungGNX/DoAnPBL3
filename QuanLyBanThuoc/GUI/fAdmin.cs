@@ -455,10 +455,12 @@ namespace QuanLyBanThuoc
             btnShowAccount.PerformClick();
             btnShowCategory.PerformClick();
         }
+
+
+
+
         #endregion
 
-
-
-
+    
     }
 }

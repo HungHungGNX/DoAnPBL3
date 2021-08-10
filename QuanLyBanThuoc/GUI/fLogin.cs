@@ -38,7 +38,7 @@ namespace QuanLyBanThuoc
             }
             else
             {
-                MessageBox.Show("Your username or password may be incorrect","Fail");
+                MyMessageBox.ShowMessage("Your username or password may be incorrect", "Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         bool Login(string userName,string passWord)

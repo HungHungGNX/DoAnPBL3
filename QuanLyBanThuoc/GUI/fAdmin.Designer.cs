@@ -30,36 +30,41 @@ namespace QuanLyBanThuoc
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpBill = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtgvBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtpkToDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.dtpkFromDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.dtpkFromDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtpkToDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tpMedicine = new System.Windows.Forms.TabPage();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.bunifuGradientPanel4 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.btnSeaarchMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txbSearchMedicineName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.btnShowMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAddMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnEditMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnDeleteMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.txbMedicineQuantity = new Guna.UI2.WinForms.Guna2TextBox();
@@ -76,92 +81,92 @@ namespace QuanLyBanThuoc
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dtgvMedicine = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnShowMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnEditMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnDeleteMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnAddMedicine = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.bunifuGradientPanel6 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.label7 = new System.Windows.Forms.Label();
+            this.txbCategoryId = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txbCategoryName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txbCategoryId = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.dtgvCategory = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.bunifuGradientPanel5 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.btnShowCategory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnEditCategory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAddCategory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDeleteCategory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cbTableStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txbTableName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txbTableId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.dtgvTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.bunifuGradientPanel9 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.btnShowTable = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAddTable = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnEditTable = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDeleteTable = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnAddTable = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bunifuGradientPanel8 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuGradientPanel7 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.cbTableStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txbTableId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txbTableName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.dtgvTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.bunifuGradientPanel12 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.btnShowAccount = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAddAccount = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnEditAccount = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bunifuGradientPanel11 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.btnResetPassword = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.nmAccountType = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txbDisplayName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txbUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nmAccountType = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.txbDisplayName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.bunifuGradientPanel10 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.dtgvAccount = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btnShowAccount = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnEditAccount = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnAddAccount = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.elipseControl1 = new QuanLyBanThuoc.GUI.ElipseControl();
             this.btnExit = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bunifuGradientPanel14 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.tabControl1.SuspendLayout();
             this.tpBill.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
             this.panel1.SuspendLayout();
             this.tpMedicine.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.bunifuGradientPanel4.SuspendLayout();
+            this.bunifuGradientPanel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmMedicinePrice)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMedicine)).BeginInit();
-            this.panel3.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.bunifuGradientPanel6.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCategory)).BeginInit();
             this.panel10.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.bunifuGradientPanel9.SuspendLayout();
+            this.bunifuGradientPanel7.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTable)).BeginInit();
-            this.panel12.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.panel13.SuspendLayout();
+            this.bunifuGradientPanel12.SuspendLayout();
+            this.bunifuGradientPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmAccountType)).BeginInit();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
-            this.panel15.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.bunifuGradientPanel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -202,45 +207,45 @@ namespace QuanLyBanThuoc
             // 
             // dtgvBill
             // 
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBill.BackgroundColor = System.Drawing.Color.White;
             this.dtgvBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBill.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvBill.ColumnHeadersHeight = 19;
             this.dtgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvBill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvBill.EnableHeadersVisualStyles = false;
             this.dtgvBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvBill.Location = new System.Drawing.Point(0, 0);
             this.dtgvBill.Name = "dtgvBill";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvBill.RowHeadersVisible = false;
             this.dtgvBill.RowHeadersWidth = 51;
             this.dtgvBill.RowTemplate.Height = 24;
@@ -278,49 +283,11 @@ namespace QuanLyBanThuoc
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dtpkToDate);
-            this.panel1.Controls.Add(this.dtpkFromDate);
-            this.panel1.Controls.Add(this.btnThongKe);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Controls.Add(this.bunifuGradientPanel14);
+            this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1142, 73);
+            this.panel1.Size = new System.Drawing.Size(1142, 82);
             this.panel1.TabIndex = 0;
-            // 
-            // dtpkToDate
-            // 
-            this.dtpkToDate.AutoRoundedCorners = true;
-            this.dtpkToDate.BorderRadius = 17;
-            this.dtpkToDate.CheckedState.Parent = this.dtpkToDate;
-            this.dtpkToDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dtpkToDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpkToDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpkToDate.HoverState.Parent = this.dtpkToDate;
-            this.dtpkToDate.Location = new System.Drawing.Point(869, 21);
-            this.dtpkToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpkToDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpkToDate.Name = "dtpkToDate";
-            this.dtpkToDate.ShadowDecoration.Parent = this.dtpkToDate;
-            this.dtpkToDate.Size = new System.Drawing.Size(243, 36);
-            this.dtpkToDate.TabIndex = 1;
-            this.dtpkToDate.Value = new System.DateTime(2021, 5, 3, 18, 2, 35, 772);
-            // 
-            // dtpkFromDate
-            // 
-            this.dtpkFromDate.AutoRoundedCorners = true;
-            this.dtpkFromDate.BorderRadius = 17;
-            this.dtpkFromDate.CheckedState.Parent = this.dtpkFromDate;
-            this.dtpkFromDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dtpkFromDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpkFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpkFromDate.HoverState.Parent = this.dtpkFromDate;
-            this.dtpkFromDate.Location = new System.Drawing.Point(37, 21);
-            this.dtpkFromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpkFromDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpkFromDate.Name = "dtpkFromDate";
-            this.dtpkFromDate.ShadowDecoration.Parent = this.dtpkFromDate;
-            this.dtpkFromDate.Size = new System.Drawing.Size(243, 36);
-            this.dtpkFromDate.TabIndex = 1;
-            this.dtpkFromDate.Value = new System.DateTime(2021, 5, 3, 18, 2, 35, 772);
             // 
             // btnThongKe
             // 
@@ -333,7 +300,7 @@ namespace QuanLyBanThuoc
             this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.btnThongKe.ForeColor = System.Drawing.Color.Black;
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(446, 15);
+            this.btnThongKe.Location = new System.Drawing.Point(470, 17);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
             this.btnThongKe.Size = new System.Drawing.Size(161, 42);
@@ -341,13 +308,49 @@ namespace QuanLyBanThuoc
             this.btnThongKe.Text = "Thống Kê";
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
+            // dtpkFromDate
+            // 
+            this.dtpkFromDate.AutoRoundedCorners = true;
+            this.dtpkFromDate.BorderRadius = 17;
+            this.dtpkFromDate.CheckedState.Parent = this.dtpkFromDate;
+            this.dtpkFromDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dtpkFromDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpkFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpkFromDate.HoverState.Parent = this.dtpkFromDate;
+            this.dtpkFromDate.Location = new System.Drawing.Point(22, 23);
+            this.dtpkFromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpkFromDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpkFromDate.Name = "dtpkFromDate";
+            this.dtpkFromDate.ShadowDecoration.Parent = this.dtpkFromDate;
+            this.dtpkFromDate.Size = new System.Drawing.Size(243, 36);
+            this.dtpkFromDate.TabIndex = 1;
+            this.dtpkFromDate.Value = new System.DateTime(2021, 5, 3, 18, 2, 35, 772);
+            // 
+            // dtpkToDate
+            // 
+            this.dtpkToDate.AutoRoundedCorners = true;
+            this.dtpkToDate.BorderRadius = 17;
+            this.dtpkToDate.CheckedState.Parent = this.dtpkToDate;
+            this.dtpkToDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dtpkToDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpkToDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpkToDate.HoverState.Parent = this.dtpkToDate;
+            this.dtpkToDate.Location = new System.Drawing.Point(878, 23);
+            this.dtpkToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpkToDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpkToDate.Name = "dtpkToDate";
+            this.dtpkToDate.ShadowDecoration.Parent = this.dtpkToDate;
+            this.dtpkToDate.Size = new System.Drawing.Size(243, 36);
+            this.dtpkToDate.TabIndex = 1;
+            this.dtpkToDate.Value = new System.DateTime(2021, 5, 3, 18, 2, 35, 772);
+            // 
             // tpMedicine
             // 
             this.tpMedicine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
-            this.tpMedicine.Controls.Add(this.panel5);
+            this.tpMedicine.Controls.Add(this.bunifuGradientPanel4);
+            this.tpMedicine.Controls.Add(this.bunifuGradientPanel3);
             this.tpMedicine.Controls.Add(this.panel6);
             this.tpMedicine.Controls.Add(this.panel4);
-            this.tpMedicine.Controls.Add(this.panel3);
             this.tpMedicine.Location = new System.Drawing.Point(4, 25);
             this.tpMedicine.Name = "tpMedicine";
             this.tpMedicine.Padding = new System.Windows.Forms.Padding(3);
@@ -355,14 +358,23 @@ namespace QuanLyBanThuoc
             this.tpMedicine.TabIndex = 1;
             this.tpMedicine.Text = "Medicine";
             // 
-            // panel5
+            // bunifuGradientPanel4
             // 
-            this.panel5.Controls.Add(this.btnSeaarchMedicine);
-            this.panel5.Controls.Add(this.txbSearchMedicineName);
-            this.panel5.Location = new System.Drawing.Point(557, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(591, 83);
-            this.panel5.TabIndex = 1;
+            this.bunifuGradientPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel4.BackgroundImage")));
+            this.bunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel4.BorderRadius = 1;
+            this.bunifuGradientPanel4.Controls.Add(this.btnSeaarchMedicine);
+            this.bunifuGradientPanel4.Controls.Add(this.txbSearchMedicineName);
+            this.bunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(239)))));
+            this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel4.Location = new System.Drawing.Point(551, 0);
+            this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
+            this.bunifuGradientPanel4.Quality = 10;
+            this.bunifuGradientPanel4.Size = new System.Drawing.Size(597, 93);
+            this.bunifuGradientPanel4.TabIndex = 3;
             // 
             // btnSeaarchMedicine
             // 
@@ -375,7 +387,7 @@ namespace QuanLyBanThuoc
             this.btnSeaarchMedicine.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.btnSeaarchMedicine.ForeColor = System.Drawing.Color.Black;
             this.btnSeaarchMedicine.HoverState.Parent = this.btnSeaarchMedicine;
-            this.btnSeaarchMedicine.Location = new System.Drawing.Point(393, 14);
+            this.btnSeaarchMedicine.Location = new System.Drawing.Point(441, 19);
             this.btnSeaarchMedicine.Name = "btnSeaarchMedicine";
             this.btnSeaarchMedicine.ShadowDecoration.Parent = this.btnSeaarchMedicine;
             this.btnSeaarchMedicine.Size = new System.Drawing.Size(101, 46);
@@ -399,7 +411,7 @@ namespace QuanLyBanThuoc
             this.txbSearchMedicineName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbSearchMedicineName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbSearchMedicineName.HoverState.Parent = this.txbSearchMedicineName;
-            this.txbSearchMedicineName.Location = new System.Drawing.Point(38, 20);
+            this.txbSearchMedicineName.Location = new System.Drawing.Point(95, 23);
             this.txbSearchMedicineName.Name = "txbSearchMedicineName";
             this.txbSearchMedicineName.PasswordChar = '\0';
             this.txbSearchMedicineName.PlaceholderText = "";
@@ -408,12 +420,108 @@ namespace QuanLyBanThuoc
             this.txbSearchMedicineName.Size = new System.Drawing.Size(313, 36);
             this.txbSearchMedicineName.TabIndex = 0;
             // 
+            // bunifuGradientPanel3
+            // 
+            this.bunifuGradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
+            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.BorderRadius = 1;
+            this.bunifuGradientPanel3.Controls.Add(this.btnShowMedicine);
+            this.bunifuGradientPanel3.Controls.Add(this.btnAddMedicine);
+            this.bunifuGradientPanel3.Controls.Add(this.btnEditMedicine);
+            this.bunifuGradientPanel3.Controls.Add(this.btnDeleteMedicine);
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(239)))));
+            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(3, 0);
+            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
+            this.bunifuGradientPanel3.Quality = 10;
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(548, 91);
+            this.bunifuGradientPanel3.TabIndex = 2;
+            // 
+            // btnShowMedicine
+            // 
+            this.btnShowMedicine.AutoRoundedCorners = true;
+            this.btnShowMedicine.BorderRadius = 26;
+            this.btnShowMedicine.CheckedState.Parent = this.btnShowMedicine;
+            this.btnShowMedicine.CustomImages.Parent = this.btnShowMedicine;
+            this.btnShowMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnShowMedicine.FillColor2 = System.Drawing.Color.Thistle;
+            this.btnShowMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnShowMedicine.ForeColor = System.Drawing.Color.Black;
+            this.btnShowMedicine.HoverState.Parent = this.btnShowMedicine;
+            this.btnShowMedicine.Location = new System.Drawing.Point(379, 17);
+            this.btnShowMedicine.Name = "btnShowMedicine";
+            this.btnShowMedicine.ShadowDecoration.Parent = this.btnShowMedicine;
+            this.btnShowMedicine.Size = new System.Drawing.Size(101, 55);
+            this.btnShowMedicine.TabIndex = 0;
+            this.btnShowMedicine.Text = "SHOW";
+            this.btnShowMedicine.Click += new System.EventHandler(this.btnShowMedicine_Click);
+            // 
+            // btnAddMedicine
+            // 
+            this.btnAddMedicine.AutoRoundedCorners = true;
+            this.btnAddMedicine.BorderRadius = 26;
+            this.btnAddMedicine.CheckedState.Parent = this.btnAddMedicine;
+            this.btnAddMedicine.CustomImages.Parent = this.btnAddMedicine;
+            this.btnAddMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAddMedicine.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAddMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAddMedicine.ForeColor = System.Drawing.Color.Black;
+            this.btnAddMedicine.HoverState.Parent = this.btnAddMedicine;
+            this.btnAddMedicine.Location = new System.Drawing.Point(58, 17);
+            this.btnAddMedicine.Name = "btnAddMedicine";
+            this.btnAddMedicine.ShadowDecoration.Parent = this.btnAddMedicine;
+            this.btnAddMedicine.Size = new System.Drawing.Size(101, 55);
+            this.btnAddMedicine.TabIndex = 0;
+            this.btnAddMedicine.Text = "ADD";
+            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
+            // 
+            // btnEditMedicine
+            // 
+            this.btnEditMedicine.AutoRoundedCorners = true;
+            this.btnEditMedicine.BorderRadius = 26;
+            this.btnEditMedicine.CheckedState.Parent = this.btnEditMedicine;
+            this.btnEditMedicine.CustomImages.Parent = this.btnEditMedicine;
+            this.btnEditMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnEditMedicine.FillColor2 = System.Drawing.Color.HotPink;
+            this.btnEditMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEditMedicine.ForeColor = System.Drawing.Color.Black;
+            this.btnEditMedicine.HoverState.Parent = this.btnEditMedicine;
+            this.btnEditMedicine.Location = new System.Drawing.Point(272, 17);
+            this.btnEditMedicine.Name = "btnEditMedicine";
+            this.btnEditMedicine.ShadowDecoration.Parent = this.btnEditMedicine;
+            this.btnEditMedicine.Size = new System.Drawing.Size(101, 55);
+            this.btnEditMedicine.TabIndex = 0;
+            this.btnEditMedicine.Text = "EDIT";
+            this.btnEditMedicine.Click += new System.EventHandler(this.btnEditMedicine_Click);
+            // 
+            // btnDeleteMedicine
+            // 
+            this.btnDeleteMedicine.AutoRoundedCorners = true;
+            this.btnDeleteMedicine.BorderRadius = 26;
+            this.btnDeleteMedicine.CheckedState.Parent = this.btnDeleteMedicine;
+            this.btnDeleteMedicine.CustomImages.Parent = this.btnDeleteMedicine;
+            this.btnDeleteMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeleteMedicine.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDeleteMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteMedicine.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteMedicine.HoverState.Parent = this.btnDeleteMedicine;
+            this.btnDeleteMedicine.Location = new System.Drawing.Point(165, 17);
+            this.btnDeleteMedicine.Name = "btnDeleteMedicine";
+            this.btnDeleteMedicine.ShadowDecoration.Parent = this.btnDeleteMedicine;
+            this.btnDeleteMedicine.Size = new System.Drawing.Size(101, 55);
+            this.btnDeleteMedicine.TabIndex = 0;
+            this.btnDeleteMedicine.Text = "DELETE";
+            this.btnDeleteMedicine.Click += new System.EventHandler(this.btnDeleteMedicine_Click);
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.bunifuGradientPanel1);
-            this.panel6.Location = new System.Drawing.Point(553, 92);
+            this.panel6.Location = new System.Drawing.Point(551, 92);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(599, 507);
+            this.panel6.Size = new System.Drawing.Size(603, 507);
             this.panel6.TabIndex = 0;
             // 
             // bunifuGradientPanel1
@@ -442,7 +550,7 @@ namespace QuanLyBanThuoc
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(599, 507);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(603, 507);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // txbMedicineQuantity
@@ -675,30 +783,30 @@ namespace QuanLyBanThuoc
             // 
             // dtgvMedicine
             // 
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            this.dtgvMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dtgvMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvMedicine.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvMedicine.BackgroundColor = System.Drawing.Color.White;
             this.dtgvMedicine.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvMedicine.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvMedicine.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvMedicine.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvMedicine.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvMedicine.DefaultCellStyle = dataGridViewCellStyle7;
             this.dtgvMedicine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvMedicine.EnableHeadersVisualStyles = false;
             this.dtgvMedicine.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -733,97 +841,10 @@ namespace QuanLyBanThuoc
             this.dtgvMedicine.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvMedicine.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnShowMedicine);
-            this.panel3.Controls.Add(this.btnEditMedicine);
-            this.panel3.Controls.Add(this.btnDeleteMedicine);
-            this.panel3.Controls.Add(this.btnAddMedicine);
-            this.panel3.Location = new System.Drawing.Point(6, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(545, 83);
-            this.panel3.TabIndex = 0;
-            // 
-            // btnShowMedicine
-            // 
-            this.btnShowMedicine.AutoRoundedCorners = true;
-            this.btnShowMedicine.BorderRadius = 26;
-            this.btnShowMedicine.CheckedState.Parent = this.btnShowMedicine;
-            this.btnShowMedicine.CustomImages.Parent = this.btnShowMedicine;
-            this.btnShowMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnShowMedicine.FillColor2 = System.Drawing.Color.Thistle;
-            this.btnShowMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnShowMedicine.ForeColor = System.Drawing.Color.Black;
-            this.btnShowMedicine.HoverState.Parent = this.btnShowMedicine;
-            this.btnShowMedicine.Location = new System.Drawing.Point(354, 10);
-            this.btnShowMedicine.Name = "btnShowMedicine";
-            this.btnShowMedicine.ShadowDecoration.Parent = this.btnShowMedicine;
-            this.btnShowMedicine.Size = new System.Drawing.Size(101, 55);
-            this.btnShowMedicine.TabIndex = 0;
-            this.btnShowMedicine.Text = "SHOW";
-            this.btnShowMedicine.Click += new System.EventHandler(this.btnShowMedicine_Click);
-            // 
-            // btnEditMedicine
-            // 
-            this.btnEditMedicine.AutoRoundedCorners = true;
-            this.btnEditMedicine.BorderRadius = 26;
-            this.btnEditMedicine.CheckedState.Parent = this.btnEditMedicine;
-            this.btnEditMedicine.CustomImages.Parent = this.btnEditMedicine;
-            this.btnEditMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnEditMedicine.FillColor2 = System.Drawing.Color.HotPink;
-            this.btnEditMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnEditMedicine.ForeColor = System.Drawing.Color.Black;
-            this.btnEditMedicine.HoverState.Parent = this.btnEditMedicine;
-            this.btnEditMedicine.Location = new System.Drawing.Point(247, 10);
-            this.btnEditMedicine.Name = "btnEditMedicine";
-            this.btnEditMedicine.ShadowDecoration.Parent = this.btnEditMedicine;
-            this.btnEditMedicine.Size = new System.Drawing.Size(101, 55);
-            this.btnEditMedicine.TabIndex = 0;
-            this.btnEditMedicine.Text = "EDIT";
-            this.btnEditMedicine.Click += new System.EventHandler(this.btnEditMedicine_Click);
-            // 
-            // btnDeleteMedicine
-            // 
-            this.btnDeleteMedicine.AutoRoundedCorners = true;
-            this.btnDeleteMedicine.BorderRadius = 26;
-            this.btnDeleteMedicine.CheckedState.Parent = this.btnDeleteMedicine;
-            this.btnDeleteMedicine.CustomImages.Parent = this.btnDeleteMedicine;
-            this.btnDeleteMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDeleteMedicine.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnDeleteMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnDeleteMedicine.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteMedicine.HoverState.Parent = this.btnDeleteMedicine;
-            this.btnDeleteMedicine.Location = new System.Drawing.Point(140, 10);
-            this.btnDeleteMedicine.Name = "btnDeleteMedicine";
-            this.btnDeleteMedicine.ShadowDecoration.Parent = this.btnDeleteMedicine;
-            this.btnDeleteMedicine.Size = new System.Drawing.Size(101, 55);
-            this.btnDeleteMedicine.TabIndex = 0;
-            this.btnDeleteMedicine.Text = "DELETE";
-            this.btnDeleteMedicine.Click += new System.EventHandler(this.btnDeleteMedicine_Click);
-            // 
-            // btnAddMedicine
-            // 
-            this.btnAddMedicine.AutoRoundedCorners = true;
-            this.btnAddMedicine.BorderRadius = 26;
-            this.btnAddMedicine.CheckedState.Parent = this.btnAddMedicine;
-            this.btnAddMedicine.CustomImages.Parent = this.btnAddMedicine;
-            this.btnAddMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAddMedicine.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAddMedicine.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnAddMedicine.ForeColor = System.Drawing.Color.Black;
-            this.btnAddMedicine.HoverState.Parent = this.btnAddMedicine;
-            this.btnAddMedicine.Location = new System.Drawing.Point(33, 10);
-            this.btnAddMedicine.Name = "btnAddMedicine";
-            this.btnAddMedicine.ShadowDecoration.Parent = this.btnAddMedicine;
-            this.btnAddMedicine.Size = new System.Drawing.Size(101, 55);
-            this.btnAddMedicine.TabIndex = 0;
-            this.btnAddMedicine.Text = "ADD";
-            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
-            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(239)))));
-            this.tabPage1.Controls.Add(this.panel8);
+            this.tabPage1.Controls.Add(this.bunifuGradientPanel6);
             this.tabPage1.Controls.Add(this.panel9);
             this.tabPage1.Controls.Add(this.panel10);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -833,35 +854,69 @@ namespace QuanLyBanThuoc
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Category Medicine";
             // 
-            // panel8
+            // bunifuGradientPanel6
             // 
-            this.panel8.BackColor = System.Drawing.Color.Azure;
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.txbCategoryName);
-            this.panel8.Controls.Add(this.txbCategoryId);
-            this.panel8.Location = new System.Drawing.Point(550, 85);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(595, 514);
-            this.panel8.TabIndex = 2;
+            this.bunifuGradientPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel6.BackgroundImage")));
+            this.bunifuGradientPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel6.BorderRadius = 1;
+            this.bunifuGradientPanel6.Controls.Add(this.label7);
+            this.bunifuGradientPanel6.Controls.Add(this.txbCategoryId);
+            this.bunifuGradientPanel6.Controls.Add(this.label8);
+            this.bunifuGradientPanel6.Controls.Add(this.txbCategoryName);
+            this.bunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.Moccasin;
+            this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.OldLace;
+            this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel6.Location = new System.Drawing.Point(550, 85);
+            this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
+            this.bunifuGradientPanel6.Quality = 10;
+            this.bunifuGradientPanel6.Size = new System.Drawing.Size(598, 514);
+            this.bunifuGradientPanel6.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(91, 110);
+            this.label7.Location = new System.Drawing.Point(124, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(141, 19);
             this.label7.TabIndex = 1;
             this.label7.Text = "Name Category";
+            // 
+            // txbCategoryId
+            // 
+            this.txbCategoryId.AutoRoundedCorners = true;
+            this.txbCategoryId.BorderRadius = 17;
+            this.txbCategoryId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbCategoryId.DefaultText = "";
+            this.txbCategoryId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbCategoryId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbCategoryId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbCategoryId.DisabledState.Parent = this.txbCategoryId;
+            this.txbCategoryId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbCategoryId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbCategoryId.FocusedState.Parent = this.txbCategoryId;
+            this.txbCategoryId.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCategoryId.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txbCategoryId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbCategoryId.HoverState.Parent = this.txbCategoryId;
+            this.txbCategoryId.Location = new System.Drawing.Point(160, 127);
+            this.txbCategoryId.Name = "txbCategoryId";
+            this.txbCategoryId.PasswordChar = '\0';
+            this.txbCategoryId.PlaceholderText = "";
+            this.txbCategoryId.SelectedText = "";
+            this.txbCategoryId.ShadowDecoration.Parent = this.txbCategoryId;
+            this.txbCategoryId.Size = new System.Drawing.Size(313, 36);
+            this.txbCategoryId.TabIndex = 0;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(91, 27);
+            this.label8.Location = new System.Drawing.Point(124, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 19);
             this.label8.TabIndex = 1;
@@ -884,7 +939,7 @@ namespace QuanLyBanThuoc
             this.txbCategoryName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txbCategoryName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbCategoryName.HoverState.Parent = this.txbCategoryName;
-            this.txbCategoryName.Location = new System.Drawing.Point(127, 142);
+            this.txbCategoryName.Location = new System.Drawing.Point(160, 208);
             this.txbCategoryName.Name = "txbCategoryName";
             this.txbCategoryName.PasswordChar = '\0';
             this.txbCategoryName.PlaceholderText = "";
@@ -892,32 +947,6 @@ namespace QuanLyBanThuoc
             this.txbCategoryName.ShadowDecoration.Parent = this.txbCategoryName;
             this.txbCategoryName.Size = new System.Drawing.Size(313, 36);
             this.txbCategoryName.TabIndex = 0;
-            // 
-            // txbCategoryId
-            // 
-            this.txbCategoryId.AutoRoundedCorners = true;
-            this.txbCategoryId.BorderRadius = 17;
-            this.txbCategoryId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbCategoryId.DefaultText = "";
-            this.txbCategoryId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbCategoryId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbCategoryId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbCategoryId.DisabledState.Parent = this.txbCategoryId;
-            this.txbCategoryId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbCategoryId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbCategoryId.FocusedState.Parent = this.txbCategoryId;
-            this.txbCategoryId.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCategoryId.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txbCategoryId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbCategoryId.HoverState.Parent = this.txbCategoryId;
-            this.txbCategoryId.Location = new System.Drawing.Point(127, 61);
-            this.txbCategoryId.Name = "txbCategoryId";
-            this.txbCategoryId.PasswordChar = '\0';
-            this.txbCategoryId.PlaceholderText = "";
-            this.txbCategoryId.SelectedText = "";
-            this.txbCategoryId.ShadowDecoration.Parent = this.txbCategoryId;
-            this.txbCategoryId.Size = new System.Drawing.Size(313, 36);
-            this.txbCategoryId.TabIndex = 0;
             // 
             // panel9
             // 
@@ -929,30 +958,30 @@ namespace QuanLyBanThuoc
             // 
             // dtgvCategory
             // 
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            this.dtgvCategory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            this.dtgvCategory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgvCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvCategory.BackgroundColor = System.Drawing.Color.White;
             this.dtgvCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvCategory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvCategory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvCategory.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvCategory.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvCategory.DefaultCellStyle = dataGridViewCellStyle10;
             this.dtgvCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvCategory.EnableHeadersVisualStyles = false;
             this.dtgvCategory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -989,11 +1018,28 @@ namespace QuanLyBanThuoc
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.bunifuGradientPanel5);
             this.panel10.Controls.Add(this.bunifuGradientPanel2);
-            this.panel10.Location = new System.Drawing.Point(6, 3);
+            this.panel10.Location = new System.Drawing.Point(3, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1139, 83);
+            this.panel10.Size = new System.Drawing.Size(1142, 83);
             this.panel10.TabIndex = 4;
+            // 
+            // bunifuGradientPanel5
+            // 
+            this.bunifuGradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel5.BackgroundImage")));
+            this.bunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel5.BorderRadius = 1;
+            this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FloralWhite;
+            this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel5.Location = new System.Drawing.Point(547, -1);
+            this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
+            this.bunifuGradientPanel5.Quality = 10;
+            this.bunifuGradientPanel5.Size = new System.Drawing.Size(614, 93);
+            this.bunifuGradientPanel5.TabIndex = 4;
             // 
             // bunifuGradientPanel2
             // 
@@ -1005,15 +1051,14 @@ namespace QuanLyBanThuoc
             this.bunifuGradientPanel2.Controls.Add(this.btnEditCategory);
             this.bunifuGradientPanel2.Controls.Add(this.btnAddCategory);
             this.bunifuGradientPanel2.Controls.Add(this.btnDeleteCategory);
-            this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Thistle;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.Azure;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(1, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(1139, 83);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(547, 83);
             this.bunifuGradientPanel2.TabIndex = 0;
             // 
             // btnShowCategory
@@ -1095,9 +1140,10 @@ namespace QuanLyBanThuoc
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
-            this.tabPage2.Controls.Add(this.panel7);
+            this.tabPage2.Controls.Add(this.bunifuGradientPanel9);
+            this.tabPage2.Controls.Add(this.bunifuGradientPanel8);
+            this.tabPage2.Controls.Add(this.bunifuGradientPanel7);
             this.tabPage2.Controls.Add(this.panel11);
-            this.tabPage2.Controls.Add(this.panel12);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1105,18 +1151,139 @@ namespace QuanLyBanThuoc
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Table";
             // 
-            // panel7
+            // bunifuGradientPanel9
             // 
-            this.panel7.Controls.Add(this.cbTableStatus);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.label5);
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.txbTableName);
-            this.panel7.Controls.Add(this.txbTableId);
-            this.panel7.Location = new System.Drawing.Point(557, 92);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(588, 507);
-            this.panel7.TabIndex = 5;
+            this.bunifuGradientPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel9.BackgroundImage")));
+            this.bunifuGradientPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel9.BorderRadius = 1;
+            this.bunifuGradientPanel9.Controls.Add(this.btnShowTable);
+            this.bunifuGradientPanel9.Controls.Add(this.btnAddTable);
+            this.bunifuGradientPanel9.Controls.Add(this.btnEditTable);
+            this.bunifuGradientPanel9.Controls.Add(this.btnDeleteTable);
+            this.bunifuGradientPanel9.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel9.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel9.GradientTopLeft = System.Drawing.Color.FloralWhite;
+            this.bunifuGradientPanel9.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel9.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel9.Name = "bunifuGradientPanel9";
+            this.bunifuGradientPanel9.Quality = 10;
+            this.bunifuGradientPanel9.Size = new System.Drawing.Size(559, 92);
+            this.bunifuGradientPanel9.TabIndex = 9;
+            // 
+            // btnShowTable
+            // 
+            this.btnShowTable.AutoRoundedCorners = true;
+            this.btnShowTable.BorderRadius = 26;
+            this.btnShowTable.CheckedState.Parent = this.btnShowTable;
+            this.btnShowTable.CustomImages.Parent = this.btnShowTable;
+            this.btnShowTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnShowTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnShowTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnShowTable.ForeColor = System.Drawing.Color.Black;
+            this.btnShowTable.HoverState.Parent = this.btnShowTable;
+            this.btnShowTable.Location = new System.Drawing.Point(338, 13);
+            this.btnShowTable.Name = "btnShowTable";
+            this.btnShowTable.ShadowDecoration.Parent = this.btnShowTable;
+            this.btnShowTable.Size = new System.Drawing.Size(99, 55);
+            this.btnShowTable.TabIndex = 0;
+            this.btnShowTable.Text = "SHOW";
+            this.btnShowTable.Click += new System.EventHandler(this.btnShowTable_Click);
+            // 
+            // btnAddTable
+            // 
+            this.btnAddTable.AutoRoundedCorners = true;
+            this.btnAddTable.BorderRadius = 26;
+            this.btnAddTable.CheckedState.Parent = this.btnAddTable;
+            this.btnAddTable.CustomImages.Parent = this.btnAddTable;
+            this.btnAddTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAddTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAddTable.ForeColor = System.Drawing.Color.Black;
+            this.btnAddTable.HoverState.Parent = this.btnAddTable;
+            this.btnAddTable.Location = new System.Drawing.Point(3, 13);
+            this.btnAddTable.Name = "btnAddTable";
+            this.btnAddTable.ShadowDecoration.Parent = this.btnAddTable;
+            this.btnAddTable.Size = new System.Drawing.Size(99, 55);
+            this.btnAddTable.TabIndex = 0;
+            this.btnAddTable.Text = "ADD";
+            this.btnAddTable.Click += new System.EventHandler(this.btnAddTable_Click);
+            // 
+            // btnEditTable
+            // 
+            this.btnEditTable.AutoRoundedCorners = true;
+            this.btnEditTable.BorderRadius = 26;
+            this.btnEditTable.CheckedState.Parent = this.btnEditTable;
+            this.btnEditTable.CustomImages.Parent = this.btnEditTable;
+            this.btnEditTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEditTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnEditTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEditTable.ForeColor = System.Drawing.Color.Black;
+            this.btnEditTable.HoverState.Parent = this.btnEditTable;
+            this.btnEditTable.Location = new System.Drawing.Point(226, 13);
+            this.btnEditTable.Name = "btnEditTable";
+            this.btnEditTable.ShadowDecoration.Parent = this.btnEditTable;
+            this.btnEditTable.Size = new System.Drawing.Size(99, 55);
+            this.btnEditTable.TabIndex = 0;
+            this.btnEditTable.Text = "EDIT";
+            this.btnEditTable.Click += new System.EventHandler(this.btnEditTable_Click);
+            // 
+            // btnDeleteTable
+            // 
+            this.btnDeleteTable.AutoRoundedCorners = true;
+            this.btnDeleteTable.BorderRadius = 26;
+            this.btnDeleteTable.CheckedState.Parent = this.btnDeleteTable;
+            this.btnDeleteTable.CustomImages.Parent = this.btnDeleteTable;
+            this.btnDeleteTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDeleteTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnDeleteTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteTable.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteTable.HoverState.Parent = this.btnDeleteTable;
+            this.btnDeleteTable.Location = new System.Drawing.Point(116, 13);
+            this.btnDeleteTable.Name = "btnDeleteTable";
+            this.btnDeleteTable.ShadowDecoration.Parent = this.btnDeleteTable;
+            this.btnDeleteTable.Size = new System.Drawing.Size(99, 55);
+            this.btnDeleteTable.TabIndex = 0;
+            this.btnDeleteTable.Text = "DELETE";
+            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
+            // 
+            // bunifuGradientPanel8
+            // 
+            this.bunifuGradientPanel8.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel8.BackgroundImage")));
+            this.bunifuGradientPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel8.BorderRadius = 1;
+            this.bunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel8.GradientTopLeft = System.Drawing.Color.Azure;
+            this.bunifuGradientPanel8.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel8.Location = new System.Drawing.Point(557, 1);
+            this.bunifuGradientPanel8.Name = "bunifuGradientPanel8";
+            this.bunifuGradientPanel8.Quality = 10;
+            this.bunifuGradientPanel8.Size = new System.Drawing.Size(591, 91);
+            this.bunifuGradientPanel8.TabIndex = 8;
+            // 
+            // bunifuGradientPanel7
+            // 
+            this.bunifuGradientPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
+            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel7.BorderRadius = 1;
+            this.bunifuGradientPanel7.Controls.Add(this.cbTableStatus);
+            this.bunifuGradientPanel7.Controls.Add(this.txbTableId);
+            this.bunifuGradientPanel7.Controls.Add(this.label9);
+            this.bunifuGradientPanel7.Controls.Add(this.txbTableName);
+            this.bunifuGradientPanel7.Controls.Add(this.label5);
+            this.bunifuGradientPanel7.Controls.Add(this.label6);
+            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.PaleTurquoise;
+            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.OldLace;
+            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel7.Location = new System.Drawing.Point(557, 92);
+            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
+            this.bunifuGradientPanel7.Quality = 10;
+            this.bunifuGradientPanel7.Size = new System.Drawing.Size(595, 503);
+            this.bunifuGradientPanel7.TabIndex = 6;
             // 
             // cbTableStatus
             // 
@@ -1133,70 +1300,11 @@ namespace QuanLyBanThuoc
             this.cbTableStatus.HoverState.Parent = this.cbTableStatus;
             this.cbTableStatus.ItemHeight = 30;
             this.cbTableStatus.ItemsAppearance.Parent = this.cbTableStatus;
-            this.cbTableStatus.Location = new System.Drawing.Point(156, 248);
+            this.cbTableStatus.Location = new System.Drawing.Point(159, 292);
             this.cbTableStatus.Name = "cbTableStatus";
             this.cbTableStatus.ShadowDecoration.Parent = this.cbTableStatus;
             this.cbTableStatus.Size = new System.Drawing.Size(313, 36);
             this.cbTableStatus.TabIndex = 2;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label9.Location = new System.Drawing.Point(120, 213);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 19);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Status";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(120, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 19);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Name Table";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(120, 44);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 19);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "ID Table";
-            // 
-            // txbTableName
-            // 
-            this.txbTableName.AutoRoundedCorners = true;
-            this.txbTableName.BorderRadius = 17;
-            this.txbTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbTableName.DefaultText = "";
-            this.txbTableName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbTableName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbTableName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbTableName.DisabledState.Parent = this.txbTableName;
-            this.txbTableName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbTableName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbTableName.FocusedState.Parent = this.txbTableName;
-            this.txbTableName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTableName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txbTableName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbTableName.HoverState.Parent = this.txbTableName;
-            this.txbTableName.Location = new System.Drawing.Point(156, 159);
-            this.txbTableName.Name = "txbTableName";
-            this.txbTableName.PasswordChar = '\0';
-            this.txbTableName.PlaceholderText = "";
-            this.txbTableName.SelectedText = "";
-            this.txbTableName.ShadowDecoration.Parent = this.txbTableName;
-            this.txbTableName.Size = new System.Drawing.Size(313, 36);
-            this.txbTableName.TabIndex = 0;
             // 
             // txbTableId
             // 
@@ -1215,7 +1323,7 @@ namespace QuanLyBanThuoc
             this.txbTableId.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txbTableId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbTableId.HoverState.Parent = this.txbTableId;
-            this.txbTableId.Location = new System.Drawing.Point(156, 78);
+            this.txbTableId.Location = new System.Drawing.Point(159, 122);
             this.txbTableId.Name = "txbTableId";
             this.txbTableId.PasswordChar = '\0';
             this.txbTableId.PlaceholderText = "";
@@ -1223,6 +1331,65 @@ namespace QuanLyBanThuoc
             this.txbTableId.ShadowDecoration.Parent = this.txbTableId;
             this.txbTableId.Size = new System.Drawing.Size(313, 36);
             this.txbTableId.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label9.Location = new System.Drawing.Point(123, 257);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 19);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Status";
+            // 
+            // txbTableName
+            // 
+            this.txbTableName.AutoRoundedCorners = true;
+            this.txbTableName.BorderRadius = 17;
+            this.txbTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbTableName.DefaultText = "";
+            this.txbTableName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbTableName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbTableName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbTableName.DisabledState.Parent = this.txbTableName;
+            this.txbTableName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbTableName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbTableName.FocusedState.Parent = this.txbTableName;
+            this.txbTableName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTableName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txbTableName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbTableName.HoverState.Parent = this.txbTableName;
+            this.txbTableName.Location = new System.Drawing.Point(159, 203);
+            this.txbTableName.Name = "txbTableName";
+            this.txbTableName.PasswordChar = '\0';
+            this.txbTableName.PlaceholderText = "";
+            this.txbTableName.SelectedText = "";
+            this.txbTableName.ShadowDecoration.Parent = this.txbTableName;
+            this.txbTableName.Size = new System.Drawing.Size(313, 36);
+            this.txbTableName.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label5.Location = new System.Drawing.Point(123, 171);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 19);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Name Table";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label6.Location = new System.Drawing.Point(123, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 19);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "ID Table";
             // 
             // panel11
             // 
@@ -1234,30 +1401,30 @@ namespace QuanLyBanThuoc
             // 
             // dtgvTable
             // 
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            this.dtgvTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            this.dtgvTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dtgvTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvTable.BackgroundColor = System.Drawing.Color.White;
             this.dtgvTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dtgvTable.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvTable.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvTable.DefaultCellStyle = dataGridViewCellStyle13;
             this.dtgvTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvTable.EnableHeadersVisualStyles = false;
             this.dtgvTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -1292,99 +1459,13 @@ namespace QuanLyBanThuoc
             this.dtgvTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.btnShowTable);
-            this.panel12.Controls.Add(this.btnEditTable);
-            this.panel12.Controls.Add(this.btnDeleteTable);
-            this.panel12.Controls.Add(this.btnAddTable);
-            this.panel12.Location = new System.Drawing.Point(0, 3);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(551, 83);
-            this.panel12.TabIndex = 7;
-            // 
-            // btnShowTable
-            // 
-            this.btnShowTable.AutoRoundedCorners = true;
-            this.btnShowTable.BorderRadius = 26;
-            this.btnShowTable.CheckedState.Parent = this.btnShowTable;
-            this.btnShowTable.CustomImages.Parent = this.btnShowTable;
-            this.btnShowTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnShowTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnShowTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnShowTable.ForeColor = System.Drawing.Color.Black;
-            this.btnShowTable.HoverState.Parent = this.btnShowTable;
-            this.btnShowTable.Location = new System.Drawing.Point(372, 10);
-            this.btnShowTable.Name = "btnShowTable";
-            this.btnShowTable.ShadowDecoration.Parent = this.btnShowTable;
-            this.btnShowTable.Size = new System.Drawing.Size(99, 55);
-            this.btnShowTable.TabIndex = 0;
-            this.btnShowTable.Text = "SHOW";
-            this.btnShowTable.Click += new System.EventHandler(this.btnShowTable_Click);
-            // 
-            // btnEditTable
-            // 
-            this.btnEditTable.AutoRoundedCorners = true;
-            this.btnEditTable.BorderRadius = 26;
-            this.btnEditTable.CheckedState.Parent = this.btnEditTable;
-            this.btnEditTable.CustomImages.Parent = this.btnEditTable;
-            this.btnEditTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnEditTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnEditTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnEditTable.ForeColor = System.Drawing.Color.Black;
-            this.btnEditTable.HoverState.Parent = this.btnEditTable;
-            this.btnEditTable.Location = new System.Drawing.Point(260, 10);
-            this.btnEditTable.Name = "btnEditTable";
-            this.btnEditTable.ShadowDecoration.Parent = this.btnEditTable;
-            this.btnEditTable.Size = new System.Drawing.Size(99, 55);
-            this.btnEditTable.TabIndex = 0;
-            this.btnEditTable.Text = "EDIT";
-            this.btnEditTable.Click += new System.EventHandler(this.btnEditTable_Click);
-            // 
-            // btnDeleteTable
-            // 
-            this.btnDeleteTable.AutoRoundedCorners = true;
-            this.btnDeleteTable.BorderRadius = 26;
-            this.btnDeleteTable.CheckedState.Parent = this.btnDeleteTable;
-            this.btnDeleteTable.CustomImages.Parent = this.btnDeleteTable;
-            this.btnDeleteTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDeleteTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDeleteTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnDeleteTable.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteTable.HoverState.Parent = this.btnDeleteTable;
-            this.btnDeleteTable.Location = new System.Drawing.Point(150, 10);
-            this.btnDeleteTable.Name = "btnDeleteTable";
-            this.btnDeleteTable.ShadowDecoration.Parent = this.btnDeleteTable;
-            this.btnDeleteTable.Size = new System.Drawing.Size(99, 55);
-            this.btnDeleteTable.TabIndex = 0;
-            this.btnDeleteTable.Text = "DELETE";
-            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
-            // 
-            // btnAddTable
-            // 
-            this.btnAddTable.AutoRoundedCorners = true;
-            this.btnAddTable.BorderRadius = 26;
-            this.btnAddTable.CheckedState.Parent = this.btnAddTable;
-            this.btnAddTable.CustomImages.Parent = this.btnAddTable;
-            this.btnAddTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnAddTable.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAddTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnAddTable.ForeColor = System.Drawing.Color.Black;
-            this.btnAddTable.HoverState.Parent = this.btnAddTable;
-            this.btnAddTable.Location = new System.Drawing.Point(37, 10);
-            this.btnAddTable.Name = "btnAddTable";
-            this.btnAddTable.ShadowDecoration.Parent = this.btnAddTable;
-            this.btnAddTable.Size = new System.Drawing.Size(99, 55);
-            this.btnAddTable.TabIndex = 0;
-            this.btnAddTable.Text = "ADD";
-            this.btnAddTable.Click += new System.EventHandler(this.btnAddTable_Click);
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.PowderBlue;
-            this.tabPage3.Controls.Add(this.panel13);
+            this.tabPage3.Controls.Add(this.bunifuGradientPanel12);
+            this.tabPage3.Controls.Add(this.bunifuGradientPanel11);
+            this.tabPage3.Controls.Add(this.bunifuGradientPanel10);
             this.tabPage3.Controls.Add(this.panel14);
-            this.tabPage3.Controls.Add(this.panel15);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -1392,124 +1473,143 @@ namespace QuanLyBanThuoc
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Account";
             // 
-            // panel13
+            // bunifuGradientPanel12
             // 
-            this.panel13.Controls.Add(this.btnResetPassword);
-            this.panel13.Controls.Add(this.nmAccountType);
-            this.panel13.Controls.Add(this.label10);
-            this.panel13.Controls.Add(this.label11);
-            this.panel13.Controls.Add(this.label12);
-            this.panel13.Controls.Add(this.txbDisplayName);
-            this.panel13.Controls.Add(this.txbUserName);
-            this.panel13.Location = new System.Drawing.Point(557, 85);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(588, 514);
-            this.panel13.TabIndex = 8;
+            this.bunifuGradientPanel12.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel12.BackgroundImage")));
+            this.bunifuGradientPanel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel12.BorderRadius = 1;
+            this.bunifuGradientPanel12.Controls.Add(this.btnShowAccount);
+            this.bunifuGradientPanel12.Controls.Add(this.btnAddAccount);
+            this.bunifuGradientPanel12.Controls.Add(this.btnDeleteAccount);
+            this.bunifuGradientPanel12.Controls.Add(this.btnEditAccount);
+            this.bunifuGradientPanel12.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel12.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel12.GradientTopLeft = System.Drawing.Color.Azure;
+            this.bunifuGradientPanel12.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel12.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel12.Name = "bunifuGradientPanel12";
+            this.bunifuGradientPanel12.Quality = 10;
+            this.bunifuGradientPanel12.Size = new System.Drawing.Size(559, 84);
+            this.bunifuGradientPanel12.TabIndex = 12;
+            // 
+            // btnShowAccount
+            // 
+            this.btnShowAccount.AutoRoundedCorners = true;
+            this.btnShowAccount.BorderRadius = 26;
+            this.btnShowAccount.CheckedState.Parent = this.btnShowAccount;
+            this.btnShowAccount.CustomImages.Parent = this.btnShowAccount;
+            this.btnShowAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnShowAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnShowAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnShowAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnShowAccount.HoverState.Parent = this.btnShowAccount;
+            this.btnShowAccount.Location = new System.Drawing.Point(378, 14);
+            this.btnShowAccount.Name = "btnShowAccount";
+            this.btnShowAccount.ShadowDecoration.Parent = this.btnShowAccount;
+            this.btnShowAccount.Size = new System.Drawing.Size(100, 55);
+            this.btnShowAccount.TabIndex = 0;
+            this.btnShowAccount.Text = "SHOW";
+            this.btnShowAccount.Click += new System.EventHandler(this.btnShowAccount_Click);
+            // 
+            // btnAddAccount
+            // 
+            this.btnAddAccount.AutoRoundedCorners = true;
+            this.btnAddAccount.BorderRadius = 26;
+            this.btnAddAccount.CheckedState.Parent = this.btnAddAccount;
+            this.btnAddAccount.CustomImages.Parent = this.btnAddAccount;
+            this.btnAddAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAddAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAddAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnAddAccount.HoverState.Parent = this.btnAddAccount;
+            this.btnAddAccount.Location = new System.Drawing.Point(43, 14);
+            this.btnAddAccount.Name = "btnAddAccount";
+            this.btnAddAccount.ShadowDecoration.Parent = this.btnAddAccount;
+            this.btnAddAccount.Size = new System.Drawing.Size(100, 55);
+            this.btnAddAccount.TabIndex = 0;
+            this.btnAddAccount.Text = "ADD";
+            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
+            // 
+            // btnDeleteAccount
+            // 
+            this.btnDeleteAccount.AutoRoundedCorners = true;
+            this.btnDeleteAccount.BorderRadius = 26;
+            this.btnDeleteAccount.CheckedState.Parent = this.btnDeleteAccount;
+            this.btnDeleteAccount.CustomImages.Parent = this.btnDeleteAccount;
+            this.btnDeleteAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDeleteAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeleteAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAccount.HoverState.Parent = this.btnDeleteAccount;
+            this.btnDeleteAccount.Location = new System.Drawing.Point(156, 14);
+            this.btnDeleteAccount.Name = "btnDeleteAccount";
+            this.btnDeleteAccount.ShadowDecoration.Parent = this.btnDeleteAccount;
+            this.btnDeleteAccount.Size = new System.Drawing.Size(100, 55);
+            this.btnDeleteAccount.TabIndex = 0;
+            this.btnDeleteAccount.Text = "DELETE";
+            this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
+            // 
+            // btnEditAccount
+            // 
+            this.btnEditAccount.AutoRoundedCorners = true;
+            this.btnEditAccount.BorderRadius = 26;
+            this.btnEditAccount.CheckedState.Parent = this.btnEditAccount;
+            this.btnEditAccount.CustomImages.Parent = this.btnEditAccount;
+            this.btnEditAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnEditAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnEditAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEditAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnEditAccount.HoverState.Parent = this.btnEditAccount;
+            this.btnEditAccount.Location = new System.Drawing.Point(266, 14);
+            this.btnEditAccount.Name = "btnEditAccount";
+            this.btnEditAccount.ShadowDecoration.Parent = this.btnEditAccount;
+            this.btnEditAccount.Size = new System.Drawing.Size(100, 55);
+            this.btnEditAccount.TabIndex = 0;
+            this.btnEditAccount.Text = "EDIT";
+            this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
+            // 
+            // bunifuGradientPanel11
+            // 
+            this.bunifuGradientPanel11.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel11.BackgroundImage")));
+            this.bunifuGradientPanel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel11.BorderRadius = 1;
+            this.bunifuGradientPanel11.Controls.Add(this.btnResetPassword);
+            this.bunifuGradientPanel11.Controls.Add(this.txbUserName);
+            this.bunifuGradientPanel11.Controls.Add(this.nmAccountType);
+            this.bunifuGradientPanel11.Controls.Add(this.txbDisplayName);
+            this.bunifuGradientPanel11.Controls.Add(this.label10);
+            this.bunifuGradientPanel11.Controls.Add(this.label12);
+            this.bunifuGradientPanel11.Controls.Add(this.label11);
+            this.bunifuGradientPanel11.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel11.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel11.GradientTopLeft = System.Drawing.Color.Azure;
+            this.bunifuGradientPanel11.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel11.Location = new System.Drawing.Point(559, 85);
+            this.bunifuGradientPanel11.Name = "bunifuGradientPanel11";
+            this.bunifuGradientPanel11.Quality = 10;
+            this.bunifuGradientPanel11.Size = new System.Drawing.Size(593, 514);
+            this.bunifuGradientPanel11.TabIndex = 12;
             // 
             // btnResetPassword
             // 
             this.btnResetPassword.AutoRoundedCorners = true;
-            this.btnResetPassword.BorderRadius = 27;
+            this.btnResetPassword.BorderRadius = 31;
             this.btnResetPassword.CheckedState.Parent = this.btnResetPassword;
             this.btnResetPassword.CustomImages.Parent = this.btnResetPassword;
             this.btnResetPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnResetPassword.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnResetPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnResetPassword.ForeColor = System.Drawing.Color.Black;
+            this.btnResetPassword.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnResetPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnResetPassword.HoverState.Parent = this.btnResetPassword;
-            this.btnResetPassword.Location = new System.Drawing.Point(300, 304);
+            this.btnResetPassword.Location = new System.Drawing.Point(358, 343);
             this.btnResetPassword.Name = "btnResetPassword";
             this.btnResetPassword.ShadowDecoration.Parent = this.btnResetPassword;
-            this.btnResetPassword.Size = new System.Drawing.Size(165, 56);
+            this.btnResetPassword.Size = new System.Drawing.Size(175, 65);
             this.btnResetPassword.TabIndex = 11;
             this.btnResetPassword.Text = "Reset PassWord";
             this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
-            // 
-            // nmAccountType
-            // 
-            this.nmAccountType.AutoRoundedCorners = true;
-            this.nmAccountType.BackColor = System.Drawing.Color.Transparent;
-            this.nmAccountType.BorderRadius = 17;
-            this.nmAccountType.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nmAccountType.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.nmAccountType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.nmAccountType.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nmAccountType.DisabledState.Parent = this.nmAccountType;
-            this.nmAccountType.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.nmAccountType.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.nmAccountType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nmAccountType.FocusedState.Parent = this.nmAccountType;
-            this.nmAccountType.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmAccountType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.nmAccountType.Location = new System.Drawing.Point(152, 235);
-            this.nmAccountType.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nmAccountType.Name = "nmAccountType";
-            this.nmAccountType.ShadowDecoration.Parent = this.nmAccountType;
-            this.nmAccountType.Size = new System.Drawing.Size(313, 36);
-            this.nmAccountType.TabIndex = 2;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label10.Location = new System.Drawing.Point(116, 197);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 19);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Type Account";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label11.Location = new System.Drawing.Point(116, 111);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 19);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Display Name";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label12.Location = new System.Drawing.Point(116, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 19);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "User Name";
-            // 
-            // txbDisplayName
-            // 
-            this.txbDisplayName.AutoRoundedCorners = true;
-            this.txbDisplayName.BorderRadius = 17;
-            this.txbDisplayName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbDisplayName.DefaultText = "";
-            this.txbDisplayName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbDisplayName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbDisplayName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbDisplayName.DisabledState.Parent = this.txbDisplayName;
-            this.txbDisplayName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbDisplayName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbDisplayName.FocusedState.Parent = this.txbDisplayName;
-            this.txbDisplayName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbDisplayName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txbDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbDisplayName.HoverState.Parent = this.txbDisplayName;
-            this.txbDisplayName.Location = new System.Drawing.Point(152, 143);
-            this.txbDisplayName.Name = "txbDisplayName";
-            this.txbDisplayName.PasswordChar = '\0';
-            this.txbDisplayName.PlaceholderText = "";
-            this.txbDisplayName.SelectedText = "";
-            this.txbDisplayName.ShadowDecoration.Parent = this.txbDisplayName;
-            this.txbDisplayName.Size = new System.Drawing.Size(313, 36);
-            this.txbDisplayName.TabIndex = 0;
             // 
             // txbUserName
             // 
@@ -1528,7 +1628,7 @@ namespace QuanLyBanThuoc
             this.txbUserName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txbUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbUserName.HoverState.Parent = this.txbUserName;
-            this.txbUserName.Location = new System.Drawing.Point(152, 62);
+            this.txbUserName.Location = new System.Drawing.Point(155, 81);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.PasswordChar = '\0';
             this.txbUserName.PlaceholderText = "";
@@ -1536,6 +1636,108 @@ namespace QuanLyBanThuoc
             this.txbUserName.ShadowDecoration.Parent = this.txbUserName;
             this.txbUserName.Size = new System.Drawing.Size(313, 36);
             this.txbUserName.TabIndex = 0;
+            // 
+            // nmAccountType
+            // 
+            this.nmAccountType.AutoRoundedCorners = true;
+            this.nmAccountType.BackColor = System.Drawing.Color.Transparent;
+            this.nmAccountType.BorderRadius = 17;
+            this.nmAccountType.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nmAccountType.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nmAccountType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nmAccountType.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nmAccountType.DisabledState.Parent = this.nmAccountType;
+            this.nmAccountType.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.nmAccountType.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.nmAccountType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nmAccountType.FocusedState.Parent = this.nmAccountType;
+            this.nmAccountType.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmAccountType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.nmAccountType.Location = new System.Drawing.Point(155, 254);
+            this.nmAccountType.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nmAccountType.Name = "nmAccountType";
+            this.nmAccountType.ShadowDecoration.Parent = this.nmAccountType;
+            this.nmAccountType.Size = new System.Drawing.Size(313, 36);
+            this.nmAccountType.TabIndex = 2;
+            // 
+            // txbDisplayName
+            // 
+            this.txbDisplayName.AutoRoundedCorners = true;
+            this.txbDisplayName.BorderRadius = 17;
+            this.txbDisplayName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbDisplayName.DefaultText = "";
+            this.txbDisplayName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbDisplayName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbDisplayName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbDisplayName.DisabledState.Parent = this.txbDisplayName;
+            this.txbDisplayName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbDisplayName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbDisplayName.FocusedState.Parent = this.txbDisplayName;
+            this.txbDisplayName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDisplayName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txbDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbDisplayName.HoverState.Parent = this.txbDisplayName;
+            this.txbDisplayName.Location = new System.Drawing.Point(155, 162);
+            this.txbDisplayName.Name = "txbDisplayName";
+            this.txbDisplayName.PasswordChar = '\0';
+            this.txbDisplayName.PlaceholderText = "";
+            this.txbDisplayName.SelectedText = "";
+            this.txbDisplayName.ShadowDecoration.Parent = this.txbDisplayName;
+            this.txbDisplayName.Size = new System.Drawing.Size(313, 36);
+            this.txbDisplayName.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label10.Location = new System.Drawing.Point(119, 216);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(123, 19);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Type Account";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label12.Location = new System.Drawing.Point(119, 47);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(99, 19);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "User Name";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label11.Location = new System.Drawing.Point(119, 130);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(125, 19);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Display Name";
+            // 
+            // bunifuGradientPanel10
+            // 
+            this.bunifuGradientPanel10.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel10.BackgroundImage")));
+            this.bunifuGradientPanel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel10.BorderRadius = 1;
+            this.bunifuGradientPanel10.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel10.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel10.GradientTopLeft = System.Drawing.Color.Azure;
+            this.bunifuGradientPanel10.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel10.Location = new System.Drawing.Point(559, 1);
+            this.bunifuGradientPanel10.Name = "bunifuGradientPanel10";
+            this.bunifuGradientPanel10.Quality = 10;
+            this.bunifuGradientPanel10.Size = new System.Drawing.Size(589, 84);
+            this.bunifuGradientPanel10.TabIndex = 11;
             // 
             // panel14
             // 
@@ -1547,30 +1749,30 @@ namespace QuanLyBanThuoc
             // 
             // dtgvAccount
             // 
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            this.dtgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            this.dtgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dtgvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvAccount.BackgroundColor = System.Drawing.Color.White;
             this.dtgvAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvAccount.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvAccount.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dtgvAccount.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvAccount.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvAccount.DefaultCellStyle = dataGridViewCellStyle16;
             this.dtgvAccount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvAccount.EnableHeadersVisualStyles = false;
             this.dtgvAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -1604,93 +1806,6 @@ namespace QuanLyBanThuoc
             this.dtgvAccount.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvAccount.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvAccount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.btnShowAccount);
-            this.panel15.Controls.Add(this.btnEditAccount);
-            this.panel15.Controls.Add(this.btnDeleteAccount);
-            this.panel15.Controls.Add(this.btnAddAccount);
-            this.panel15.Location = new System.Drawing.Point(3, 3);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(548, 83);
-            this.panel15.TabIndex = 10;
-            // 
-            // btnShowAccount
-            // 
-            this.btnShowAccount.AutoRoundedCorners = true;
-            this.btnShowAccount.BorderRadius = 26;
-            this.btnShowAccount.CheckedState.Parent = this.btnShowAccount;
-            this.btnShowAccount.CustomImages.Parent = this.btnShowAccount;
-            this.btnShowAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnShowAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnShowAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnShowAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnShowAccount.HoverState.Parent = this.btnShowAccount;
-            this.btnShowAccount.Location = new System.Drawing.Point(372, 10);
-            this.btnShowAccount.Name = "btnShowAccount";
-            this.btnShowAccount.ShadowDecoration.Parent = this.btnShowAccount;
-            this.btnShowAccount.Size = new System.Drawing.Size(100, 55);
-            this.btnShowAccount.TabIndex = 0;
-            this.btnShowAccount.Text = "SHOW";
-            this.btnShowAccount.Click += new System.EventHandler(this.btnShowAccount_Click);
-            // 
-            // btnEditAccount
-            // 
-            this.btnEditAccount.AutoRoundedCorners = true;
-            this.btnEditAccount.BorderRadius = 26;
-            this.btnEditAccount.CheckedState.Parent = this.btnEditAccount;
-            this.btnEditAccount.CustomImages.Parent = this.btnEditAccount;
-            this.btnEditAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnEditAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnEditAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnEditAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnEditAccount.HoverState.Parent = this.btnEditAccount;
-            this.btnEditAccount.Location = new System.Drawing.Point(260, 10);
-            this.btnEditAccount.Name = "btnEditAccount";
-            this.btnEditAccount.ShadowDecoration.Parent = this.btnEditAccount;
-            this.btnEditAccount.Size = new System.Drawing.Size(100, 55);
-            this.btnEditAccount.TabIndex = 0;
-            this.btnEditAccount.Text = "EDIT";
-            this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
-            // 
-            // btnDeleteAccount
-            // 
-            this.btnDeleteAccount.AutoRoundedCorners = true;
-            this.btnDeleteAccount.BorderRadius = 26;
-            this.btnDeleteAccount.CheckedState.Parent = this.btnDeleteAccount;
-            this.btnDeleteAccount.CustomImages.Parent = this.btnDeleteAccount;
-            this.btnDeleteAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDeleteAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAccount.HoverState.Parent = this.btnDeleteAccount;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(150, 10);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.ShadowDecoration.Parent = this.btnDeleteAccount;
-            this.btnDeleteAccount.Size = new System.Drawing.Size(100, 55);
-            this.btnDeleteAccount.TabIndex = 0;
-            this.btnDeleteAccount.Text = "DELETE";
-            this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
-            // 
-            // btnAddAccount
-            // 
-            this.btnAddAccount.AutoRoundedCorners = true;
-            this.btnAddAccount.BorderRadius = 26;
-            this.btnAddAccount.CheckedState.Parent = this.btnAddAccount;
-            this.btnAddAccount.CustomImages.Parent = this.btnAddAccount;
-            this.btnAddAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnAddAccount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAddAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnAddAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnAddAccount.HoverState.Parent = this.btnAddAccount;
-            this.btnAddAccount.Location = new System.Drawing.Point(37, 10);
-            this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.ShadowDecoration.Parent = this.btnAddAccount;
-            this.btnAddAccount.Size = new System.Drawing.Size(100, 55);
-            this.btnAddAccount.TabIndex = 0;
-            this.btnAddAccount.Text = "ADD";
-            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
             // tabPage4
             // 
@@ -1736,6 +1851,26 @@ namespace QuanLyBanThuoc
             this.btnExit.TabIndex = 12;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // bunifuGradientPanel14
+            // 
+            this.bunifuGradientPanel14.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel14.BackgroundImage")));
+            this.bunifuGradientPanel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel14.BorderRadius = 1;
+            this.bunifuGradientPanel14.Controls.Add(this.dtpkFromDate);
+            this.bunifuGradientPanel14.Controls.Add(this.btnThongKe);
+            this.bunifuGradientPanel14.Controls.Add(this.dtpkToDate);
+            this.bunifuGradientPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel14.GradientBottomLeft = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel14.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.bunifuGradientPanel14.GradientTopLeft = System.Drawing.Color.Azure;
+            this.bunifuGradientPanel14.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel14.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel14.Name = "bunifuGradientPanel14";
+            this.bunifuGradientPanel14.Quality = 10;
+            this.bunifuGradientPanel14.Size = new System.Drawing.Size(1142, 82);
+            this.bunifuGradientPanel14.TabIndex = 12;
+            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1755,35 +1890,36 @@ namespace QuanLyBanThuoc
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tpMedicine.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.bunifuGradientPanel4.ResumeLayout(false);
+            this.bunifuGradientPanel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmMedicinePrice)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMedicine)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.bunifuGradientPanel6.ResumeLayout(false);
+            this.bunifuGradientPanel6.PerformLayout();
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCategory)).EndInit();
             this.panel10.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.bunifuGradientPanel9.ResumeLayout(false);
+            this.bunifuGradientPanel7.ResumeLayout(false);
+            this.bunifuGradientPanel7.PerformLayout();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTable)).EndInit();
-            this.panel12.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
+            this.bunifuGradientPanel12.ResumeLayout(false);
+            this.bunifuGradientPanel11.ResumeLayout(false);
+            this.bunifuGradientPanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmAccountType)).EndInit();
             this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
-            this.panel15.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.bunifuGradientPanel14.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1798,10 +1934,8 @@ namespace QuanLyBanThuoc
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpkToDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpkFromDate;
         private Guna.UI2.WinForms.Guna2GradientButton btnThongKe;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2GradientButton btnSeaarchMedicine;
         private Guna.UI2.WinForms.Guna2TextBox txbSearchMedicineName;
         private Guna.UI2.WinForms.Guna2ComboBox cbMedicineCategory;
@@ -1817,7 +1951,6 @@ namespace QuanLyBanThuoc
         private Guna.UI2.WinForms.Guna2GradientButton btnDeleteMedicine;
         private Guna.UI2.WinForms.Guna2GradientButton btnAddMedicine;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txbCategoryName;
@@ -1829,7 +1962,6 @@ namespace QuanLyBanThuoc
         private Guna.UI2.WinForms.Guna2GradientButton btnDeleteCategory;
         private Guna.UI2.WinForms.Guna2GradientButton btnAddCategory;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panel7;
         private Guna.UI2.WinForms.Guna2ComboBox cbTableStatus;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
@@ -1837,20 +1969,17 @@ namespace QuanLyBanThuoc
         private Guna.UI2.WinForms.Guna2TextBox txbTableName;
         private Guna.UI2.WinForms.Guna2TextBox txbTableId;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
         private Guna.UI2.WinForms.Guna2GradientButton btnShowTable;
         private Guna.UI2.WinForms.Guna2GradientButton btnEditTable;
         private Guna.UI2.WinForms.Guna2GradientButton btnDeleteTable;
         private Guna.UI2.WinForms.Guna2GradientButton btnAddTable;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2TextBox txbDisplayName;
         private Guna.UI2.WinForms.Guna2TextBox txbUserName;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
         private Guna.UI2.WinForms.Guna2GradientButton btnShowAccount;
         private Guna.UI2.WinForms.Guna2GradientButton btnEditAccount;
         private Guna.UI2.WinForms.Guna2GradientButton btnDeleteAccount;
@@ -1874,5 +2003,16 @@ namespace QuanLyBanThuoc
         private Guna.UI2.WinForms.Guna2DataGridView dtgvAccount;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel2;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel4;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel3;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel6;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel5;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel9;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel8;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel7;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel11;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel10;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel12;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel14;
     }
 }

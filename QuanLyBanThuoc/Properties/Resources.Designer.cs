@@ -163,6 +163,16 @@ namespace QuanLyBanThuoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Information {
+            get {
+                object obj = ResourceManager.GetObject("Information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_amerian_heart_association {
             get {
                 object obj = ResourceManager.GetObject("logo-amerian-heart-association", resourceCulture);
@@ -206,6 +216,16 @@ namespace QuanLyBanThuoc.Properties {
         internal static System.Drawing.Bitmap pngtree_vector_shop_icon_png_image_334537 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-vector-shop-icon-png-image_334537", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Question {
+            get {
+                object obj = ResourceManager.GetObject("Question", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
