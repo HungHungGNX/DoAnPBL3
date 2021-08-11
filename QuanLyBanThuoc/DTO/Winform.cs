@@ -9,11 +9,9 @@ namespace QuanLyBanThuoc.DTO
 {
     class Winform
     {
-        public static fLogin login = new fLogin();
         public static fMain main;
         public static fAdmin admin;
         public static fTableManager tableManager;
         public static fSick sick;
-        
     }
 }

@@ -17,9 +17,11 @@ namespace QuanLyBanThuoc.GUI
         public fInvoiceDeatils()
         {
             InitializeComponent();
-            DataSet data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
-            dt = data.Tables[0];
-            dtgvInvoiceDetails.DataSource = data.Tables[0];
+            loadData();
+        }
+        private void fInvoiceDeatils_Load(object sender, EventArgs e)
+        {
+            guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_CENTER, Bottom);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -32,10 +34,11 @@ namespace QuanLyBanThuoc.GUI
             DataSet data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
             dtgvInvoiceDetails.DataSource = data.Tables[0];
         }
-
-        private void fInvoiceDeatils_Load(object sender, EventArgs e)
+        private void loadData()
         {
-            guna2AnimateWindow1.SetAnimateWindow(this,Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_CENTER,Bottom);
+            DataSet data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
+            dt = data.Tables[0];
+            dtgvInvoiceDetails.DataSource = data.Tables[0];
         }
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)

@@ -288,7 +288,7 @@ namespace QuanLyBanThuoc
             this.btnDiscount.Size = new System.Drawing.Size(113, 50);
             this.btnDiscount.TabIndex = 8;
             this.btnDiscount.Text = "Discount";
-            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
+            
             // 
             // nmDiscount
             // 

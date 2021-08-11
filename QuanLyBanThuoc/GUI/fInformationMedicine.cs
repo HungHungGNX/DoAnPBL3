@@ -19,6 +19,10 @@ namespace QuanLyBanThuoc.GUI
             SidePanel.Top = btnQuayLai.Top;
             ptbxInformationMedicine.Visible = true;
         }
+        private void fInformationMedicine_Load(object sender, EventArgs e)
+        {
+            guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_HOR_POSITIVE, Bottom);
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -98,12 +102,6 @@ namespace QuanLyBanThuoc.GUI
             guna2Transition1.HideSync(ptbxInformationMedicine);
             guna2Transition1.ShowSync(ptbxInformationMedicine);
         }
-
-        private void fInformationMedicine_Load(object sender, EventArgs e)
-        {
-            guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_HOR_POSITIVE, Bottom);
-        }
-
 
     }
 }

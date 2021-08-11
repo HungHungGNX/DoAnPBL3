@@ -37,6 +37,9 @@ namespace QuanLyBanThuoc.GUI
             else
             {
                 lblType.Text = "ADMIN";
+                lblDiagram.Text = "Not Limited";
+                lblStoreValue.Text = "";
+                lblAdmin.Text = "";
             }
  
             lblValue.Text = MedicineDAO.Instance.GetTotalMoneyStore().ToString()+"đ";
@@ -68,9 +71,6 @@ namespace QuanLyBanThuoc.GUI
             this.Close();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            
-        }
+
     }
 }

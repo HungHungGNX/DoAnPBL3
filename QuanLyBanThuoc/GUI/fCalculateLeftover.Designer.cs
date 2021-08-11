@@ -31,9 +31,9 @@ namespace QuanLyBanThuoc.GUI
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCalculateLeftover));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txbMoneyEnter = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,6 +42,15 @@ namespace QuanLyBanThuoc.GUI
             this.lblMoney = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuGradientPanel5 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.lblStaff = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblTable = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblIdBill = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel4 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.lblDiscount = new System.Windows.Forms.Label();
@@ -50,24 +59,23 @@ namespace QuanLyBanThuoc.GUI
             this.lblMoneyBeforeDiscount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.dtgvBillInfo = new Guna.UI2.WinForms.Guna2DataGridView();
             this.elipseControl1 = new QuanLyBanThuoc.GUI.ElipseControl();
             this.elipseControl2 = new QuanLyBanThuoc.GUI.ElipseControl();
+            this.dtgvBillInfo = new Guna.UI2.WinForms.Guna2DataGridView();
             this.bunifuGradientPanel1.SuspendLayout();
+            this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
-            this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 50);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(74, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 20);
+            this.label1.Size = new System.Drawing.Size(170, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Money of customer";
             // 
@@ -134,7 +142,7 @@ namespace QuanLyBanThuoc.GUI
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(1100, 4);
+            this.btnExit.Location = new System.Drawing.Point(1109, 4);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(43, 43);
@@ -148,7 +156,7 @@ namespace QuanLyBanThuoc.GUI
             this.lblMoney.AutoSize = true;
             this.lblMoney.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoney.ForeColor = System.Drawing.Color.Black;
-            this.lblMoney.Location = new System.Drawing.Point(159, 261);
+            this.lblMoney.Location = new System.Drawing.Point(150, 242);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(113, 21);
             this.lblMoney.TabIndex = 16;
@@ -156,7 +164,8 @@ namespace QuanLyBanThuoc.GUI
             // 
             // guna2AnimateWindow1
             // 
-            this.guna2AnimateWindow1.Interval = 400;
+            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_SLIDE;
+            this.guna2AnimateWindow1.Interval = 600;
             // 
             // bunifuGradientPanel1
             // 
@@ -164,9 +173,10 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.dtgvBillInfo);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel5);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel4);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel2);
             this.bunifuGradientPanel1.Controls.Add(this.btnExit);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -179,6 +189,118 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1156, 632);
             this.bunifuGradientPanel1.TabIndex = 23;
             // 
+            // bunifuGradientPanel5
+            // 
+            this.bunifuGradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel5.BackgroundImage")));
+            this.bunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel5.BorderRadius = 30;
+            this.bunifuGradientPanel5.Controls.Add(this.lblStaff);
+            this.bunifuGradientPanel5.Controls.Add(this.label12);
+            this.bunifuGradientPanel5.Controls.Add(this.lblTable);
+            this.bunifuGradientPanel5.Controls.Add(this.label3);
+            this.bunifuGradientPanel5.Controls.Add(this.lblIdBill);
+            this.bunifuGradientPanel5.Controls.Add(this.label8);
+            this.bunifuGradientPanel5.Controls.Add(this.lblDate);
+            this.bunifuGradientPanel5.Controls.Add(this.label10);
+            this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(196)))), ((int)(((byte)(230)))));
+            this.bunifuGradientPanel5.Location = new System.Drawing.Point(794, 4);
+            this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
+            this.bunifuGradientPanel5.Quality = 10;
+            this.bunifuGradientPanel5.Size = new System.Drawing.Size(318, 301);
+            this.bunifuGradientPanel5.TabIndex = 21;
+            // 
+            // lblStaff
+            // 
+            this.lblStaff.AutoSize = true;
+            this.lblStaff.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaff.ForeColor = System.Drawing.Color.Black;
+            this.lblStaff.Location = new System.Drawing.Point(133, 167);
+            this.lblStaff.Name = "lblStaff";
+            this.lblStaff.Size = new System.Drawing.Size(113, 21);
+            this.lblStaff.TabIndex = 26;
+            this.lblStaff.Text = "Total Money";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(31, 165);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 23);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "Staff";
+            // 
+            // lblTable
+            // 
+            this.lblTable.AutoSize = true;
+            this.lblTable.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTable.ForeColor = System.Drawing.Color.Black;
+            this.lblTable.Location = new System.Drawing.Point(133, 109);
+            this.lblTable.Name = "lblTable";
+            this.lblTable.Size = new System.Drawing.Size(113, 21);
+            this.lblTable.TabIndex = 24;
+            this.lblTable.Text = "Total Money";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(31, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 23);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Table";
+            // 
+            // lblIdBill
+            // 
+            this.lblIdBill.AutoSize = true;
+            this.lblIdBill.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdBill.ForeColor = System.Drawing.Color.Black;
+            this.lblIdBill.Location = new System.Drawing.Point(133, 48);
+            this.lblIdBill.Name = "lblIdBill";
+            this.lblIdBill.Size = new System.Drawing.Size(113, 21);
+            this.lblIdBill.TabIndex = 21;
+            this.lblIdBill.Text = "Total Money";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(31, 228);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 23);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Date";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.Black;
+            this.lblDate.Location = new System.Drawing.Point(133, 230);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(113, 21);
+            this.lblDate.TabIndex = 16;
+            this.lblDate.Text = "Total Money";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(31, 46);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 23);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Id Bill";
+            // 
             // bunifuGradientPanel4
             // 
             this.bunifuGradientPanel4.BackColor = System.Drawing.Color.Transparent;
@@ -190,10 +312,10 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel4.Controls.Add(this.lblResult);
             this.bunifuGradientPanel4.Controls.Add(this.txbMoneyEnter);
             this.bunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(171)))), ((int)(((byte)(221)))));
-            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(151)))), ((int)(((byte)(214)))));
-            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
-            this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(196)))), ((int)(((byte)(230)))));
-            this.bunifuGradientPanel4.Location = new System.Drawing.Point(690, 319);
+            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel4.Location = new System.Drawing.Point(640, 315);
             this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
             this.bunifuGradientPanel4.Quality = 10;
             this.bunifuGradientPanel4.Size = new System.Drawing.Size(318, 301);
@@ -212,11 +334,11 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel3.Controls.Add(this.label6);
             this.bunifuGradientPanel3.Controls.Add(this.lblMoney);
             this.bunifuGradientPanel3.Controls.Add(this.label4);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(171)))), ((int)(((byte)(221)))));
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(151)))), ((int)(((byte)(214)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(196)))), ((int)(((byte)(230)))));
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(690, 11);
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(470, 4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(318, 301);
@@ -227,7 +349,7 @@ namespace QuanLyBanThuoc.GUI
             this.lblDiscount.AutoSize = true;
             this.lblDiscount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiscount.ForeColor = System.Drawing.Color.Black;
-            this.lblDiscount.Location = new System.Drawing.Point(159, 140);
+            this.lblDiscount.Location = new System.Drawing.Point(156, 124);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(113, 21);
             this.lblDiscount.TabIndex = 24;
@@ -238,7 +360,7 @@ namespace QuanLyBanThuoc.GUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(16, 138);
+            this.label5.Location = new System.Drawing.Point(25, 124);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 23);
             this.label5.TabIndex = 25;
@@ -246,7 +368,7 @@ namespace QuanLyBanThuoc.GUI
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 233);
+            this.guna2Separator1.Location = new System.Drawing.Point(0, 204);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(315, 10);
             this.guna2Separator1.TabIndex = 23;
@@ -256,7 +378,7 @@ namespace QuanLyBanThuoc.GUI
             this.lblMoneyBeforeDiscount.AutoSize = true;
             this.lblMoneyBeforeDiscount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoneyBeforeDiscount.ForeColor = System.Drawing.Color.Black;
-            this.lblMoneyBeforeDiscount.Location = new System.Drawing.Point(159, 79);
+            this.lblMoneyBeforeDiscount.Location = new System.Drawing.Point(155, 65);
             this.lblMoneyBeforeDiscount.Name = "lblMoneyBeforeDiscount";
             this.lblMoneyBeforeDiscount.Size = new System.Drawing.Size(113, 21);
             this.lblMoneyBeforeDiscount.TabIndex = 21;
@@ -267,7 +389,7 @@ namespace QuanLyBanThuoc.GUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(29, 259);
+            this.label6.Location = new System.Drawing.Point(26, 242);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 23);
             this.label6.TabIndex = 22;
@@ -278,59 +400,51 @@ namespace QuanLyBanThuoc.GUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(3, 77);
+            this.label4.Location = new System.Drawing.Point(9, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 23);
             this.label4.TabIndex = 20;
             this.label4.Text = "Total Money";
             // 
-            // bunifuGradientPanel2
+            // elipseControl1
             // 
-            this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.BorderRadius = 30;
-            this.bunifuGradientPanel2.Controls.Add(this.dtgvBillInfo);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(171)))), ((int)(((byte)(221)))));
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(151)))), ((int)(((byte)(214)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(196)))), ((int)(((byte)(230)))));
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(33, 33);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(454, 526);
-            this.bunifuGradientPanel2.TabIndex = 17;
+            this.elipseControl1.CornerRadius = 30;
+            this.elipseControl1.TargetControl = this;
+            // 
+            // elipseControl2
+            // 
+            this.elipseControl2.CornerRadius = 30;
+            this.elipseControl2.TargetControl = this.dtgvBillInfo;
             // 
             // dtgvBillInfo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvBillInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvBillInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvBillInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBillInfo.BackgroundColor = System.Drawing.Color.Azure;
             this.dtgvBillInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBillInfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvBillInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBillInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBillInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvBillInfo.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBillInfo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvBillInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBillInfo.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvBillInfo.EnableHeadersVisualStyles = false;
             this.dtgvBillInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvBillInfo.Location = new System.Drawing.Point(0, 0);
+            this.dtgvBillInfo.Location = new System.Drawing.Point(8, 36);
             this.dtgvBillInfo.Name = "dtgvBillInfo";
             this.dtgvBillInfo.RowHeadersVisible = false;
             this.dtgvBillInfo.RowHeadersWidth = 51;
@@ -361,16 +475,6 @@ namespace QuanLyBanThuoc.GUI
             this.dtgvBillInfo.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvBillInfo.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // elipseControl1
-            // 
-            this.elipseControl1.CornerRadius = 30;
-            this.elipseControl1.TargetControl = this;
-            // 
-            // elipseControl2
-            // 
-            this.elipseControl2.CornerRadius = 30;
-            this.elipseControl2.TargetControl = this.dtgvBillInfo;
-            // 
             // fCalculateLeftover
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -384,11 +488,12 @@ namespace QuanLyBanThuoc.GUI
             this.Text = "fCalculateLeftover";
             this.Load += new System.EventHandler(this.fCalculateLeftover_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel5.ResumeLayout(false);
+            this.bunifuGradientPanel5.PerformLayout();
             this.bunifuGradientPanel4.ResumeLayout(false);
             this.bunifuGradientPanel4.PerformLayout();
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.bunifuGradientPanel3.PerformLayout();
-            this.bunifuGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillInfo)).EndInit();
             this.ResumeLayout(false);
 
@@ -405,8 +510,6 @@ namespace QuanLyBanThuoc.GUI
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private ElipseControl elipseControl1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel2;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgvBillInfo;
         private ElipseControl elipseControl2;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel4;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel3;
@@ -416,5 +519,15 @@ namespace QuanLyBanThuoc.GUI
         private System.Windows.Forms.Label lblMoneyBeforeDiscount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel5;
+        private System.Windows.Forms.Label lblStaff;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTable;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblIdBill;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvBillInfo;
     }
 }

@@ -19,7 +19,7 @@ namespace QuanLyBanThuoc
     public partial class fTableManager : Form
     {
         private Account loginAccount;
-
+        public static double TotalPriceForCheck = 0;
         public Account LoginAccount
         {
             get { return loginAccount; }
@@ -97,11 +97,10 @@ namespace QuanLyBanThuoc
                 totalPrice += item.TotalPrice;
                 lsvBill.Items.Add(lsvitem);
             }
-            //  CultureInfo culture = new CultureInfo("vi-VN");
-
-            //Thread.CurrentThread.CurrentCulture = culture;
+            TotalPriceForCheck = totalPrice;
             txbTotalPrice.Text =  string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}",totalPrice) + "đ";
-            // LoadTable();
+            
+             //LoadTable();
         }
         void Btn_Click(object sender, EventArgs e)
         {
@@ -133,8 +132,6 @@ namespace QuanLyBanThuoc
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-
             this.Hide();
             Winform.admin.ShowDialog();
             this.Show();
@@ -269,12 +266,13 @@ namespace QuanLyBanThuoc
         double finalTotalPriceforLeftover = 0;
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-
+            
             Table table = lsvBill.Tag as Table;
             if (table == null) return;
             int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.Id);
             int discount = (int)nmDiscount.Value;
-            double totalPrice = Convert.ToDouble(txbTotalPrice.Text);
+            // double totalPrice = Convert.ToDouble(txbTotalPrice.Text);
+            double totalPrice = TotalPriceForCheck;
             double finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
             finalTotalPriceforLeftover = finalTotalPrice;
             if (idBill != -1)
@@ -286,7 +284,7 @@ namespace QuanLyBanThuoc
                     BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     ShowBill(table.Id);
                     LoadTable();
-                    CaculateLeftOver(discount,totalPrice,finalTotalPrice,idBill);
+                    CaculateLeftOver(discount,totalPrice,finalTotalPrice,idBill,table.Name,LoginAccount.DisplayName);
                 }
             }
 
@@ -317,9 +315,9 @@ namespace QuanLyBanThuoc
             this.Show();
         }
        
-        private void CaculateLeftOver(double discount, double totalPrice,double finalTotalPrice,int idBill)
+        private void CaculateLeftOver(double discount, double totalPrice,double finalTotalPrice,int idBill,string nameTable,string displayName)
         {
-            fCalculateLeftover f = new fCalculateLeftover(discount, totalPrice, finalTotalPrice, idBill);
+            fCalculateLeftover f = new fCalculateLeftover(discount, totalPrice, finalTotalPrice, idBill, nameTable,displayName);
             f.ShowDialog();
         }
         private void invoiceDetailsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -398,14 +396,11 @@ namespace QuanLyBanThuoc
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            Winform.admin.Close();
         }
 
 
         #endregion
 
-        private void btnDiscount_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

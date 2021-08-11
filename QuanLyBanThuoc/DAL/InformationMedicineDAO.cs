@@ -79,21 +79,9 @@ namespace QuanLyBanThuoc.DAL
         }
         public double GetTotalMonth(string month, string dayOfMonth, string year)
         {
-            /*string s;
-            if (Convert.ToInt32(month) > 9) s = "select Sum(TotalPrice) from dbo.Bill where DateCheckIn > '2021" + month + "01'AND DateCheckIn < '2021" + month + "30'";
-            else s = "select Sum(TotalPrice) from dbo.Bill where DateCheckIn > '20210" + month + "01'AND DateCheckIn < '20210" + month + "30'";*/
             if (Convert.ToInt32(month) <= 9) month = "0" + month;
             string s = string.Format("select Sum(TotalPrice) from dbo.Bill where DateCheckIn >= '{0}{1}{2}' AND DateCheckIn <= '{3}{4}{5}'", year, month, "01", year, month, dayOfMonth);
-            /* string s = string.Format("UPDATE dbo.MedicineCategory SET Name = N'{0}' WHERE Id = {1}", month, id);*/
             double n = 0;
-        /*    if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-            }
-            SqlCommand sqlCommand = new SqlCommand();
-            sqlCommand.CommandType = CommandType.Text;
-            sqlCommand.CommandText = s;
-            sqlCommand.Connection = connection;*/
             try
             {
                 object ob = DataProvider.Instance.ExcuteScalar(s);

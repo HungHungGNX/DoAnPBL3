@@ -58,7 +58,8 @@ namespace QuanLyBanThuoc.GUI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Winform.main.Close();
+            Winform.tableManager.Close();
         }
 
         private void btnDiagram_Click(object sender, EventArgs e)

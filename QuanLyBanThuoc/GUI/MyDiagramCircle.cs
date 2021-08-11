@@ -12,13 +12,20 @@ using QuanLyBanThuoc.DAL;
 namespace QuanLyBanThuoc.GUI
 {
     public partial class MyDiagramCircle : UserControl
-    {
+    {       
+        DataTable table = null;
+        DataSet dataContain = null;
         public MyDiagramCircle()
         {
             InitializeComponent();
         }
-        DataTable table = null;
-        DataSet dataContain = null;
+        private void MyDiagramCircle_Load(object sender, EventArgs e)
+        {
+            LoadDataForCircle();
+            pngOk.Visible = false;
+        }
+
+
         private void btnAddMonth_Click(object sender, EventArgs e)
         {
             int dayOfMonth = 0;
@@ -76,7 +83,6 @@ namespace QuanLyBanThuoc.GUI
             dataContain = null;
             table = null;
             pngOk.Visible = true;
-
         }
         void LoadDataForCircle()
         {
@@ -95,12 +101,7 @@ namespace QuanLyBanThuoc.GUI
             dtgvRevenue.DataSource = tableDefault;
 
         }
-        private void MyDiagramCircle_Load(object sender, EventArgs e)
-        {
-            LoadDataForCircle();
-            pngOk.Visible = false;
-        }
-
+      
         private void txbMonth_MouseClick(object sender, MouseEventArgs e)
         {
             pngOk.Visible = false;

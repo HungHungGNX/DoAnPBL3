@@ -15,13 +15,22 @@ namespace QuanLyBanThuoc.GUI
     {
         double finalTotalPrice = 0;
 
-        public fCalculateLeftover(double discount, double totalPrice, double finalTotalPrice, int idBill)
+        public fCalculateLeftover(double discount, double totalPrice, double finalTotalPrice, int idBill,string nameTable,string displayName)
         {
             InitializeComponent();
-            this.finalTotalPrice = finalTotalPrice;
+            LoadData(discount,totalPrice,finalTotalPrice,idBill,nameTable,displayName);
+        
+        }
+        public void LoadData(double discount, double totalPrice, double finalTotalPrice, int idBill,string nameTable,string disPlayName)
+        {
+             this.finalTotalPrice = finalTotalPrice;
             lblMoney.Text = finalTotalPrice.ToString();
             lblDiscount.Text = discount.ToString()+"%";
             lblMoneyBeforeDiscount.Text = totalPrice.ToString();
+            lblIdBill.Text = idBill.ToString();
+            lblTable.Text = nameTable;
+            lblStaff.Text = disPlayName;
+            lblDate.Text = BillDAO.Instance.getDateCheckOutByIdBill(idBill);
             dtgvBillInfo.DataSource = BillInfoDAO.Instance.GetBillInfoByIdBill(idBill);
         }
 
@@ -46,7 +55,7 @@ namespace QuanLyBanThuoc.GUI
 
         private void fCalculateLeftover_Load(object sender, EventArgs e)
         {
-            guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_CENTER);
+            guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
         }
     }
 }

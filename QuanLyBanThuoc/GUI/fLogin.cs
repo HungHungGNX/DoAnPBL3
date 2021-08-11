@@ -35,6 +35,7 @@ namespace QuanLyBanThuoc
                 this.txbUserName.Text = "";
                 this.txbPassWord.Text = "";
                 this.txbUserName.Focus();
+                this.Show();
             }
             else
             {

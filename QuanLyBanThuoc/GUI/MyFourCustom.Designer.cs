@@ -165,8 +165,8 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuCircleProgress1.Name = "bunifuCircleProgress1";
             this.bunifuCircleProgress1.ProgressAnimationSpeed = 200;
             this.bunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCircleProgress1.ProgressColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuCircleProgress1.ProgressColor2 = System.Drawing.Color.DodgerBlue;
+            this.bunifuCircleProgress1.ProgressColor = System.Drawing.Color.LightSkyBlue;
+            this.bunifuCircleProgress1.ProgressColor2 = System.Drawing.Color.Azure;
             this.bunifuCircleProgress1.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
             this.bunifuCircleProgress1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
             this.bunifuCircleProgress1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
@@ -179,10 +179,10 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuCircleProgress1.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
             this.bunifuCircleProgress1.SuperScriptText = "";
             this.bunifuCircleProgress1.TabIndex = 16;
-            this.bunifuCircleProgress1.Text = "50";
+            this.bunifuCircleProgress1.Text = "60";
             this.bunifuCircleProgress1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress1.Value = 50;
-            this.bunifuCircleProgress1.ValueByTransition = 50;
+            this.bunifuCircleProgress1.Value = 60;
+            this.bunifuCircleProgress1.ValueByTransition = 60;
             this.bunifuCircleProgress1.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // MyFourCustom

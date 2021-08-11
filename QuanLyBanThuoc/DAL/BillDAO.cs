@@ -77,6 +77,17 @@ namespace QuanLyBanThuoc.DAL
             DataProvider.Instance.ExcuteNonQuery("Delete from dbo.BillInfo where idBill in (select Id from dbo.Bill where IdTable=" + id +"AND Status = 0" + ")");
             DataProvider.Instance.ExcuteNonQuery("Delete from dbo.Bill Where IdTable=" + id + "AND Status = 0");
         }
+        public string getDateCheckOutByIdBill(int idBill)
+        {
+            string query = string.Format("select DateCheckOut from dbo.Bill Where Id = {0}", idBill);
+
+            DataTable table = DataProvider.Instance.ExcuteQuery(query);
+            DataRow row = table.Rows[0];
+            string result = row["DateCheckOut"].ToString();
+           string[] result1 = result.Split(' ');
+            return result1[0];
+            
+        }
 
     }
 }
