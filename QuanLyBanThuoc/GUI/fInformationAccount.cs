@@ -21,11 +21,14 @@ namespace QuanLyBanThuoc.GUI
          
             InitializeComponent();   
             account = AccountDAO.Instance.GetAccountByUserName(acc.UserName);
-            guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
             if (account.Type == 0) tabControl.Visible = false;
             LoadData();
         }
-       private void LoadData()
+        private void fInformationAccount_Load(object sender, EventArgs e)
+        {
+              guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
+        }
+        private void LoadData()
         {
             lblUserName.Text = account.UserName.ToString();
             lblName.Text = account.DisplayName;
@@ -52,9 +55,8 @@ namespace QuanLyBanThuoc.GUI
         {
             string medicine=null;
             DateTime aDateTime = DateTime.Now;
-            DataSet dataSet = InformationMedicineDAO.Instance.GetListMedicineBestByMonth(aDateTime.Month.ToString(), 
+            DataTable dataTable = InformationMedicineDAO.Instance.GetListMedicineBestByMonth(aDateTime.Month.ToString(), 
             System.DateTime.DaysInMonth(aDateTime.Year, aDateTime.Month).ToString(), aDateTime.Year.ToString());
-            DataTable dataTable = dataSet.Tables[0];
             DataRow dataRow = dataTable.Rows[0];
             medicine = dataRow["Tên Thuốc"].ToString();
             return medicine;
@@ -71,6 +73,6 @@ namespace QuanLyBanThuoc.GUI
             this.Close();
         }
 
-
+    
     }
 }

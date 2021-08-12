@@ -58,13 +58,10 @@ namespace QuanLyBanThuoc.DAL
         {
             return DataProvider.Instance.ExcuteQuery("exec USP_GetListBillByDate @checkIn , @checkOut", new object[] { checkIn, checkOut });
         }
-        public DataSet GetBillListByDateForReport() 
+        public DataTable GetBillListByDateForReport() 
         {
             string connectionSTR = @"Server=DESKTOP-367SKLK\SQLEXPRESS;Database=QuanLyBanThuoc;User Id=sa;pwd=tienhung091";
-            SqlConnection connection = new SqlConnection(connectionSTR);
-            SqlDataAdapter adapter = new SqlDataAdapter("SELECT t.Id, b.TotalPrice, DateCheckIn, DateCheckOut, discount FROM dbo.Bill AS b,dbo.TableMedicine AS t WHERE  b.status = 1 AND t.id = b.idTable", connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds, "HoaDon");
+            DataTable ds = DataProvider.Instance.ExcuteQuery("SELECT t.Id, b.TotalPrice, DateCheckIn, DateCheckOut, discount FROM dbo.Bill AS b, dbo.TableMedicine AS t WHERE  b.status = 1 AND t.id = b.idTable");
             return ds;
         }
         public void DeleteBillByTableId(int id)

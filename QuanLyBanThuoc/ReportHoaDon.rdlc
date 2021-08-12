@@ -561,7 +561,7 @@
       <Fields>
         <Field Name="NameTable">
           <DataField>NameTable</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="TotalPrice">
           <DataField>TotalPrice</DataField>
@@ -569,11 +569,11 @@
         </Field>
         <Field Name="DateCheckIn">
           <DataField>DateCheckIn</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.DateTimeOffset</rd:TypeName>
         </Field>
         <Field Name="DateCheckOut">
           <DataField>DateCheckOut</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.DateTimeOffset</rd:TypeName>
         </Field>
         <Field Name="Discount">
           <DataField>Discount</DataField>

@@ -18,14 +18,14 @@ namespace QuanLyBanThuoc.GUI
         public fMain(Account acc)
         {
             account = acc;
-            InitializeComponent();
-            SidePanel.Height = btnHome.Height;
-            SidePanel.Top = btnHome.Top;
-            myFirstCustom1.BringToFront();
+            InitializeComponent();   
         }
         private void fMain_Load(object sender, EventArgs e)
         {
-            guna2AnimateWindow1.SetAnimateWindow(Winform.tableManager, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
+            guna2AnimateWindow2.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
+            SidePanel.Height = btnHome.Height;
+            SidePanel.Top = btnHome.Top;
+            myFirstCustom1.BringToFront();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -59,6 +59,7 @@ namespace QuanLyBanThuoc.GUI
         private void btnExit_Click(object sender, EventArgs e)
         {
             Winform.main.Close();
+            if (Winform.tableManager == null) return;
             Winform.tableManager.Close();
         }
 
@@ -107,10 +108,9 @@ namespace QuanLyBanThuoc.GUI
         private void btnAccount_Click(object sender, EventArgs e)
         {
             fInformationAccount f = new fInformationAccount(account);
-            this.Hide();
+             Winform.main.Hide();
             f.ShowDialog();
-            this.Show();
-
+            Winform.main.Show();
         }
     }
 }

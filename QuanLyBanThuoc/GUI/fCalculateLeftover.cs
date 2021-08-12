@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyBanThuoc.GUI;
 using QuanLyBanThuoc.DAL;
+using System.Globalization;
+
 namespace QuanLyBanThuoc.GUI
 {
     public partial class fCalculateLeftover : Form
@@ -24,9 +26,9 @@ namespace QuanLyBanThuoc.GUI
         public void LoadData(double discount, double totalPrice, double finalTotalPrice, int idBill,string nameTable,string disPlayName)
         {
              this.finalTotalPrice = finalTotalPrice;
-            lblMoney.Text = finalTotalPrice.ToString();
+            lblMoney.Text = string.Format(new CultureInfo("vi-VN"), "{0:c}", finalTotalPrice);
             lblDiscount.Text = discount.ToString()+"%";
-            lblMoneyBeforeDiscount.Text = totalPrice.ToString();
+            lblMoneyBeforeDiscount.Text =string.Format(new CultureInfo("vi-VN"), "{0:c}", totalPrice);
             lblIdBill.Text = idBill.ToString();
             lblTable.Text = nameTable;
             lblStaff.Text = disPlayName;
@@ -44,8 +46,7 @@ namespace QuanLyBanThuoc.GUI
             {
                 MessageBox.Show("Số liệu nhập vào không đúng");
             }
-       
-            lblResult.Text =(temp - finalTotalPrice).ToString();
+            lblResult.Text = string.Format(new CultureInfo("vi-VN"), "{0:c}", (temp - finalTotalPrice));
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -57,5 +58,7 @@ namespace QuanLyBanThuoc.GUI
         {
             guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
         }
+
+       
     }
 }

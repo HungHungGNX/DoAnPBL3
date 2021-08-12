@@ -32,8 +32,15 @@ namespace QuanLyBanThuoc
             LoadTable();
             LoadCategory();
             LoadComboboxTable(cbSwitchTable);
+        }
+        private void fTableManager_Load(object sender, EventArgs e)
+        {
+            Winform.admin = new fAdmin();
+            Winform.admin.loginAccount = LoginAccount;
+            Winform.admin.InsertMedicine += f_InsertMedicine;
+            Winform.admin.DeleteMedicine += f_DeleteMedicine;
+            Winform.admin.UpdateMedicine += f_UpdateMedicine;
             guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND, Bottom);
-
         }
         #region Method
         void ChangeAccount(int type)
@@ -91,14 +98,14 @@ namespace QuanLyBanThuoc
             {
                 ListViewItem lsvitem = new ListViewItem(item.MedicineName.ToString());
                 lsvitem.SubItems.Add(item.Count.ToString());
-                lsvitem.SubItems.Add(item.Price.ToString());
-                lsvitem.SubItems.Add(item.TotalPrice.ToString());
+                lsvitem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:c}", item.Price));
+                lsvitem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:c}", item.TotalPrice));
                 lsvitem.SubItems.Add(item.Dosage.ToString());
                 totalPrice += item.TotalPrice;
                 lsvBill.Items.Add(lsvitem);
             }
             TotalPriceForCheck = totalPrice;
-            txbTotalPrice.Text =  string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}",totalPrice) + "đ";
+            txbTotalPrice.Text =  string.Format(new CultureInfo("vi-VN"), "{0:c}",totalPrice);
             
              //LoadTable();
         }
@@ -327,15 +334,6 @@ namespace QuanLyBanThuoc
             this.Hide();
             f.ShowDialog();
             this.Show();
-        }
-        private void fTableManager_Load(object sender, EventArgs e)
-        {
-            Winform.admin = new fAdmin();
-            Winform.admin.loginAccount = LoginAccount;
-            Winform.admin.InsertMedicine += f_InsertMedicine;
-            Winform.admin.DeleteMedicine += f_DeleteMedicine;
-            Winform.admin.UpdateMedicine += f_UpdateMedicine;
-
         }
 
         public static Medicine medicineSearch = null;

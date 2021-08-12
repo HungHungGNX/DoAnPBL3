@@ -288,7 +288,6 @@ namespace QuanLyBanThuoc
             this.btnDiscount.Size = new System.Drawing.Size(113, 50);
             this.btnDiscount.TabIndex = 8;
             this.btnDiscount.Text = "Discount";
-            
             // 
             // nmDiscount
             // 
@@ -422,14 +421,14 @@ namespace QuanLyBanThuoc
             this.btnHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1156, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1156, 30);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(70, 22);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -439,7 +438,7 @@ namespace QuanLyBanThuoc
             this.thôngTinCaNhânToolStripMenuItem,
             this.đăngXuâtToolStripMenuItem});
             this.thôngTinTaiKhoanToolStripMenuItem.Name = "thôngTinTaiKhoanToolStripMenuItem";
-            this.thôngTinTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.thôngTinTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.thôngTinTaiKhoanToolStripMenuItem.Text = "Account Information";
             // 
             // thôngTinCaNhânToolStripMenuItem
@@ -459,28 +458,27 @@ namespace QuanLyBanThuoc
             // informationMedicineToolStripMenuItem
             // 
             this.informationMedicineToolStripMenuItem.Name = "informationMedicineToolStripMenuItem";
-            this.informationMedicineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informationMedicineToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.informationMedicineToolStripMenuItem.Text = "Information Medicine";
             this.informationMedicineToolStripMenuItem.Click += new System.EventHandler(this.informationMedicineToolStripMenuItem_Click);
             // 
             // invoiceDetailsToolStripMenuItem
             // 
             this.invoiceDetailsToolStripMenuItem.Name = "invoiceDetailsToolStripMenuItem";
-            this.invoiceDetailsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.invoiceDetailsToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.invoiceDetailsToolStripMenuItem.Text = "Invoice Details";
             this.invoiceDetailsToolStripMenuItem.Click += new System.EventHandler(this.invoiceDetailsToolStripMenuItem_Click);
             // 
             // btnHelp
             // 
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(56, 22);
+            this.btnHelp.Size = new System.Drawing.Size(56, 26);
             this.btnHelp.Text = "Help";
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // guna2AnimateWindow1
             // 
             this.guna2AnimateWindow1.Interval = 800;
-            this.guna2AnimateWindow1.TargetForm = this;
             // 
             // btnSale
             // 

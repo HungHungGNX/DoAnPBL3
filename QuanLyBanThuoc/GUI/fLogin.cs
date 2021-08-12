@@ -32,10 +32,10 @@ namespace QuanLyBanThuoc
             if (Login(userName,passWord)) {
                 this.Hide();
                 Winform.main.ShowDialog();
-                this.txbUserName.Text = "";
+                this.txbUserName.Text = userName;
                 this.txbPassWord.Text = "";
+                this.Show(); 
                 this.txbUserName.Focus();
-                this.Show();
             }
             else
             {

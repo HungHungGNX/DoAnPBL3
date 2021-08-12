@@ -11,6 +11,8 @@ using QuanLyBanThuoc.DAL;
 using QuanLyBanThuoc.DTO;
 using System.Data.SqlClient;
 using Microsoft.Reporting.WinForms;
+using QuanLyBanThuoc.GUI;
+
 namespace QuanLyBanThuoc
 {
     public partial class fAdmin : Form
@@ -34,6 +36,10 @@ namespace QuanLyBanThuoc
             List<Medicine> listFood = MedicineDAO.Instance.SearchMedicineByName(name);
 
             return listFood;
+        }
+        void MessageBoxOfMe(string Text)
+        {
+            MyMessageBox.ShowMessage(Text, "Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         void LoadData()
         {
@@ -120,11 +126,11 @@ namespace QuanLyBanThuoc
         {
             if (AccountDAO.Instance.InsertAccount(userName, displayName, type))
             {
-                MessageBox.Show("Thêm tài khoản thành công");
+                MessageBoxOfMe("Thêm tài khoản thành công");
             }
             else
             {
-                MessageBox.Show("Thêm tài khoản thất bại");
+                MessageBoxOfMe("Thêm tài khoản thất bại");
             }
 
             LoadListAccount();
@@ -134,11 +140,11 @@ namespace QuanLyBanThuoc
         {
             if (AccountDAO.Instance.UpdateAccount(userName, displayName, type))
             {
-                MessageBox.Show("Cập nhật tài khoản thành công");
+                MessageBoxOfMe("Cập nhật tài khoản thành công");
             }
             else
             {
-                MessageBox.Show("Cập nhật tài khoản thất bại");
+                MessageBoxOfMe("Cập nhật tài khoản thất bại");
             }
 
             LoadListAccount();
@@ -148,16 +154,16 @@ namespace QuanLyBanThuoc
         {
             if (loginAccount.UserName.Equals(userName))
             {
-                MessageBox.Show("Vui lòng đừng xóa chính bạn chứ");
+                MessageBoxOfMe("Vui lòng đừng xóa chính bạn chứ");
                 return;
             }
             if (AccountDAO.Instance.DeleteAccount(userName))
             {
-                MessageBox.Show("Xóa tài khoản thành công");
+                MessageBoxOfMe("Xóa tài khoản thành công");
             }
             else
             {
-                MessageBox.Show("Xóa tài khoản thất bại");
+                MessageBoxOfMe("Xóa tài khoản thất bại");
             }
 
             LoadListAccount();
@@ -167,11 +173,11 @@ namespace QuanLyBanThuoc
         {
             if (AccountDAO.Instance.ResetPassword(userName))
             {
-                MessageBox.Show("Đặt lại mật khẩu thành công");
+                MessageBoxOfMe("Đặt lại mật khẩu thành công");
             }
             else
             {
-                MessageBox.Show("Đặt lại mật khẩu thất bại");
+                MessageBoxOfMe("Đặt lại mật khẩu thất bại");
             }
         }
         #endregion
@@ -235,7 +241,7 @@ namespace QuanLyBanThuoc
             }
             else
             {
-                MessageBox.Show("Có lỗi khi thêm thuốc");
+                MessageBoxOfMe("Có lỗi khi thêm thuốc");
             }
 
         }
@@ -250,14 +256,14 @@ namespace QuanLyBanThuoc
             string dosage = txbMedicineDosage.Text;
             if (MedicineDAO.Instance.UpdateMedicine(id, name, categoryID, price,quantity,dosage))
             {
-                MessageBox.Show("Sửa thuốc thành công");
+                MessageBoxOfMe("Sửa thuốc thành công");
                 LoadListMedicine();
               if (updateMedicine != null)
                     updateMedicine(this, new EventArgs());
             }
             else
             {
-                MessageBox.Show("Có lỗi khi sửa thuốc");
+                MessageBoxOfMe("Có lỗi khi sửa thuốc");
             }
         }
         private void btnDeleteMedicine_Click(object sender, EventArgs e)
@@ -266,14 +272,14 @@ namespace QuanLyBanThuoc
 
             if (MedicineDAO.Instance.DeleteMedicine(id))
             {
-                MessageBox.Show("Xóa thuốc thành công");
+                MessageBoxOfMe("Xóa thuốc thành công");
                 LoadListMedicine();
                  if (deleteMedicine != null)
                      deleteMedicine(this, new EventArgs());
             }
             else
             {
-                MessageBox.Show("Có lỗi khi xóa thuốc");
+                MessageBoxOfMe("Có lỗi khi xóa thuốc");
             }
         }
         private event EventHandler insertMedicine;
@@ -305,14 +311,14 @@ namespace QuanLyBanThuoc
             string name = txbCategoryName.Text;
             if (CategoryDAO.Instance.InsertCategory(name))
             {
-                MessageBox.Show("Thêm category thành công");
+                MessageBoxOfMe("Thêm category thành công");
                 LoadListCategory();
                 LoadListMedicine();
                 LoadCategoryIntoCombobox(cbMedicineCategory);
             }
             else
             {
-                MessageBox.Show("Có lỗi khi thêm category");
+                MessageBoxOfMe("Có lỗi khi thêm category");
             }
         }
         private void btnEditCategory_Click(object sender, EventArgs e)
@@ -322,14 +328,14 @@ namespace QuanLyBanThuoc
            
             if (CategoryDAO.Instance.UpdateCategory(id, name))
             {
-                MessageBox.Show("Sửa category thành công");
+                MessageBoxOfMe("Sửa category thành công");
                 LoadListCategory();
                 LoadListMedicine();
                 LoadCategoryIntoCombobox(cbMedicineCategory);
             }
             else
             {
-                MessageBox.Show("Có lỗi khi sửa category");
+                MessageBoxOfMe("Có lỗi khi sửa category");
             }
         }
         private void btnDeleteCategory_Click(object sender, EventArgs e)
@@ -338,14 +344,14 @@ namespace QuanLyBanThuoc
 
             if (CategoryDAO.Instance.DeleteCategory(id))
             {
-                MessageBox.Show("Xóa category thành công");
+                MessageBoxOfMe("Xóa category thành công");
                 LoadListCategory();
                 LoadListMedicine();
                 LoadCategoryIntoCombobox(cbMedicineCategory);
             }
             else
             {
-                MessageBox.Show("Có lỗi xóa category");
+                MessageBoxOfMe("Có lỗi xóa category");
             }
         }
         private void btnShowTable_Click(object sender, EventArgs e)
@@ -358,12 +364,12 @@ namespace QuanLyBanThuoc
             string status = "Trống";
             if (TableDAO.Instance.InsertTable(name,status))
             {
-                MessageBox.Show("Thêm Table thành công khi đăng nhập lần sau table sẽ hiện ở Menu");
+                MessageBoxOfMe("Thêm Table thành công khi đăng nhập lần sau table sẽ hiện ở Menu");
                 LoadListTable();
             }
             else
             {
-                MessageBox.Show("Có lỗi khi thêm Table");
+                MessageBoxOfMe("Có lỗi khi thêm Table");
             }
         }
 
@@ -375,12 +381,12 @@ namespace QuanLyBanThuoc
 
             if (TableDAO.Instance.UpdateTable(name,status,id))
             {
-                MessageBox.Show("Sửa Table thành công khi đăng nhập lần sau table bị sửa sẽ hiện ở menu");
+                MessageBoxOfMe("Sửa Table thành công khi đăng nhập lần \n sau table bị sửa sẽ hiện ở menu");
                 LoadListTable();
             }
             else
             {
-                MessageBox.Show("Có lỗi khi sửa Table");
+                MessageBoxOfMe("Có lỗi khi sửa Table");
             }
         }
         private void btnDeleteTable_Click(object sender, EventArgs e)
@@ -389,12 +395,12 @@ namespace QuanLyBanThuoc
 
             if (TableDAO.Instance.DeleteTable(id))
             {
-                MessageBox.Show("Xóa Table thành công");
+                MessageBoxOfMe("Xóa Table thành công");
                 LoadListTable();
             }
             else
             {
-                MessageBox.Show("Có lỗi xóa table");
+                MessageBoxOfMe("Có lỗi xóa table");
             }
         }
          private void btnSeaarchMedicine_Click(object sender, EventArgs e)
@@ -439,13 +445,11 @@ namespace QuanLyBanThuoc
 
         private void fAdmin_Load(object sender, EventArgs e)
         {
-
-            DataSet ds = new DataSet();
-            ds = BillDAO.Instance.GetBillListByDateForReport();
+            DataTable ds= BillDAO.Instance.GetBillListByDateForReport();
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "QuanLyBanThuoc.ReportHoaDon.rdlc";
             ReportDataSource rds = new ReportDataSource();
             rds.Name = "DataSet1";
-            rds.Value = ds.Tables[0];
+            rds.Value = ds;
             this.reportViewer1.LocalReport.DataSources.Add(rds);
             this.reportViewer1.RefreshReport();
             guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_CENTER, Bottom);
@@ -456,11 +460,7 @@ namespace QuanLyBanThuoc
             btnShowCategory.PerformClick();
         }
 
-
-
-
         #endregion
 
-    
     }
 }

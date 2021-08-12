@@ -1,5 +1,6 @@
 ﻿using QuanLyBanThuoc.DAL;
 using QuanLyBanThuoc.DTO;
+using QuanLyBanThuoc.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,21 +50,25 @@ namespace QuanLyBanThuoc
 
             if (!newpass.Equals(reenterPass))
             {
-                MessageBox.Show("Vui lòng nhập lại mật khẩu đúng với mật khẩu mới!");
+                MessageBoxOfMe("Vui lòng nhập lại mật khẩu đúng với mật khẩu mới!");
             }
             else
             {
                 if (AccountDAO.Instance.UpdateAccount(userName, displayName, password, newpass))
                 {
-                    MessageBox.Show("Cập nhật thành công");
+                    MessageBoxOfMe("Cập nhật thành công");
                     if (updateAccount != null)
                         updateAccount(this, new AccountEvent(AccountDAO.Instance.GetAccountByUserName(userName)));
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng điền đúng mật khấu");
+                    MessageBoxOfMe("Vui lòng điền đúng mật khấu");
                 }
             }
+        }
+        void MessageBoxOfMe(string Text)
+        {
+            MyMessageBox.ShowMessage(Text, "Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private event EventHandler<AccountEvent> updateAccount;
         public event EventHandler<AccountEvent> UpdateAccount

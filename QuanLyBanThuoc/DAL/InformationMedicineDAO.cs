@@ -11,8 +11,6 @@ namespace QuanLyBanThuoc.DAL
 {
     class InformationMedicineDAO
     {
-        private static string connectionSTR = @"Server=DESKTOP-367SKLK\SQLEXPRESS;Database=QuanLyBanThuoc;User Id=sa;pwd=tienhung091";
-        private SqlConnection connection = new SqlConnection(connectionSTR);
         private static InformationMedicineDAO instance;
 
         public static InformationMedicineDAO Instance
@@ -28,53 +26,41 @@ namespace QuanLyBanThuoc.DAL
             }
         }
         private InformationMedicineDAO() { }
-        public DataSet GetListMedicineBest()
+        public DataTable GetListMedicineBest()
         {
             string s = "SELECT IdMedicine as 'Mã Thuốc',m.Name as 'Tên Thuốc',COUNT(b.Id) as 'Số Lượng Hóa Đơn' FROM dbo.BillInfo as b,dbo.Medicine as m Where b.IdMedicine = m.Id GROUP BY IdMedicine,Name Order by[Số Lượng Hóa Đơn] DESC";
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }
-        public DataSet GetListMedicineBestByMonth(string month, string dayOfMonth, string year)
+        public DataTable GetListMedicineBestByMonth(string month, string dayOfMonth, string year)
         {
             if (Convert.ToInt32(month) <= 9) month = "0" + month;
             string s =String.Format("SELECT IdMedicine as 'Mã Thuốc',m.Name as 'Tên Thuốc',COUNT(b.Id) as 'Số Lượng Hóa Đơn' FROM dbo.BillInfo as b,dbo.Medicine as m,dbo.Bill as bi Where bi.Id = b.IdBill AND b.IdMedicine = m.Id AND DateCheckIn >= '{0}{1}{2}' AND DateCheckIn <= '{3}{4}{5}' GROUP BY IdMedicine,Name Order by[Số Lượng Hóa Đơn] DESC", year, month, "01", year, month, dayOfMonth);
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }
-        public DataSet GetListMedicineEmpty()
+        public DataTable GetListMedicineEmpty()
         {
             string s = "SELECT Id as 'Mã Thuốc',Name as 'Tên Thuốc',Quantity as 'Số Lượng' FROM dbo.Medicine Where Quantity=0;";
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }
-        public DataSet GetListMedicineSellOut()
+        public DataTable GetListMedicineSellOut()
         {
             string s = "SELECT Id as 'Mã Thuốc',Name as 'Tên Thuốc',Quantity as 'Số Lượng' FROM dbo.Medicine Where Quantity>0 AND Quantity<5 ;";
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }
-        public DataSet GetListInvoiceDetails()
+        public DataTable GetListInvoiceDetails()
         {
             string s = "select dbo.Bill.Id as 'IDBill',dbo.Medicine.Name as 'NameMedicine',dbo.BillInfo.count as'Quantity',dbo.Medicine.Price,dbo.Medicine.Price * dbo.BillInfo.count as 'TotalMoney',dbo.Bill.DateCheckIn from dbo.Bill,dbo.BillInfo,dbo.Medicine Where dbo.Bill.Id = dbo.BillInfo.IdBill AND dbo.BillInfo.IdMedicine = dbo.Medicine.Id Order by dbo.Bill.Id";
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }
-        public DataSet GetListAllMedicine()
+        public DataTable GetListAllMedicine()
         {
             string s = "select * from dbo.Medicine";
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }
         public double GetTotalMonth(string month, string dayOfMonth, string year)
@@ -93,13 +79,11 @@ namespace QuanLyBanThuoc.DAL
                 return n = 0;
             }
         }
-        public DataSet GetListSick()
+        public DataTable GetListSick()
         {
-            string s = "select Id,Namesick,Signal from dbo.Sick";
-            SqlDataAdapter adapter = new SqlDataAdapter(s, connection);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
-            return ds;
+              string s = "select Id,Namesick,Signal from dbo.Sick";
+              DataTable ds= DataProvider.Instance.ExcuteQuery(s);
+               return ds;
         }
         public Sick GetSickById(int id)
         {

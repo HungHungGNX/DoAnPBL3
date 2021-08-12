@@ -29,9 +29,8 @@ namespace QuanLyBanThuoc.GUI
         }
         private void loaDtgvDick()
         {
-            DataSet data = InformationMedicineDAO.Instance.GetListSick();
-            dt = data.Tables[0];
-            dtgvSick.DataSource = dt;
+            DataTable data = InformationMedicineDAO.Instance.GetListSick();
+            dtgvSick.DataSource = data;
             dtgvSick.Columns["Signal"].Visible = false;
             dtgvSick.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dtgvSick.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;

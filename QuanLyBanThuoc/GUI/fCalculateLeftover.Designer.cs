@@ -42,6 +42,7 @@ namespace QuanLyBanThuoc.GUI
             this.lblMoney = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.dtgvBillInfo = new Guna.UI2.WinForms.Guna2DataGridView();
             this.bunifuGradientPanel5 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.lblStaff = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,12 +62,11 @@ namespace QuanLyBanThuoc.GUI
             this.label4 = new System.Windows.Forms.Label();
             this.elipseControl1 = new QuanLyBanThuoc.GUI.ElipseControl();
             this.elipseControl2 = new QuanLyBanThuoc.GUI.ElipseControl();
-            this.dtgvBillInfo = new Guna.UI2.WinForms.Guna2DataGridView();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBillInfo)).BeginInit();
             this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvBillInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,7 +128,7 @@ namespace QuanLyBanThuoc.GUI
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.ForeColor = System.Drawing.Color.Black;
-            this.lblResult.Location = new System.Drawing.Point(127, 239);
+            this.lblResult.Location = new System.Drawing.Point(109, 239);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(67, 23);
             this.lblResult.TabIndex = 3;
@@ -188,6 +188,65 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1156, 632);
             this.bunifuGradientPanel1.TabIndex = 23;
+            // 
+            // dtgvBillInfo
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvBillInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgvBillInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvBillInfo.BackgroundColor = System.Drawing.Color.Azure;
+            this.dtgvBillInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvBillInfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvBillInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBillInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dtgvBillInfo.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBillInfo.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgvBillInfo.EnableHeadersVisualStyles = false;
+            this.dtgvBillInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvBillInfo.Location = new System.Drawing.Point(8, 36);
+            this.dtgvBillInfo.Name = "dtgvBillInfo";
+            this.dtgvBillInfo.RowHeadersVisible = false;
+            this.dtgvBillInfo.RowHeadersWidth = 51;
+            this.dtgvBillInfo.RowTemplate.Height = 24;
+            this.dtgvBillInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvBillInfo.Size = new System.Drawing.Size(454, 526);
+            this.dtgvBillInfo.TabIndex = 10;
+            this.dtgvBillInfo.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgvBillInfo.ThemeStyle.BackColor = System.Drawing.Color.Azure;
+            this.dtgvBillInfo.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvBillInfo.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgvBillInfo.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvBillInfo.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvBillInfo.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvBillInfo.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvBillInfo.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgvBillInfo.ThemeStyle.ReadOnly = false;
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvBillInfo.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // bunifuGradientPanel5
             // 
@@ -416,65 +475,6 @@ namespace QuanLyBanThuoc.GUI
             this.elipseControl2.CornerRadius = 30;
             this.elipseControl2.TargetControl = this.dtgvBillInfo;
             // 
-            // dtgvBillInfo
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvBillInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgvBillInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvBillInfo.BackgroundColor = System.Drawing.Color.Azure;
-            this.dtgvBillInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvBillInfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgvBillInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBillInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgvBillInfo.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBillInfo.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgvBillInfo.EnableHeadersVisualStyles = false;
-            this.dtgvBillInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvBillInfo.Location = new System.Drawing.Point(8, 36);
-            this.dtgvBillInfo.Name = "dtgvBillInfo";
-            this.dtgvBillInfo.RowHeadersVisible = false;
-            this.dtgvBillInfo.RowHeadersWidth = 51;
-            this.dtgvBillInfo.RowTemplate.Height = 24;
-            this.dtgvBillInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvBillInfo.Size = new System.Drawing.Size(454, 526);
-            this.dtgvBillInfo.TabIndex = 10;
-            this.dtgvBillInfo.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgvBillInfo.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgvBillInfo.ThemeStyle.BackColor = System.Drawing.Color.Azure;
-            this.dtgvBillInfo.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvBillInfo.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgvBillInfo.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgvBillInfo.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgvBillInfo.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgvBillInfo.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgvBillInfo.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgvBillInfo.ThemeStyle.ReadOnly = false;
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvBillInfo.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // fCalculateLeftover
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -488,13 +488,13 @@ namespace QuanLyBanThuoc.GUI
             this.Text = "fCalculateLeftover";
             this.Load += new System.EventHandler(this.fCalculateLeftover_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBillInfo)).EndInit();
             this.bunifuGradientPanel5.ResumeLayout(false);
             this.bunifuGradientPanel5.PerformLayout();
             this.bunifuGradientPanel4.ResumeLayout(false);
             this.bunifuGradientPanel4.PerformLayout();
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.bunifuGradientPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvBillInfo)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -51,8 +51,8 @@ namespace QuanLyBanThuoc.GUI
                 ptbxInformationMedicine.Visible = false;
                 SidePanel.Height = btnMedicineBest.Height;
                 SidePanel.Top = btnMedicineBest.Top;
-                DataSet data = InformationMedicineDAO.Instance.GetListMedicineBestByMonth(txbMonth.Text, dayOfMonth.ToString(), year.ToString());
-                dtgvInformationMedicine.DataSource = data.Tables[0];
+                DataTable data = InformationMedicineDAO.Instance.GetListMedicineBestByMonth(txbMonth.Text, dayOfMonth.ToString(), year.ToString());
+                dtgvInformationMedicine.DataSource = data;
                 guna2Transition1.HideSync(dtgvInformationMedicine);
                 guna2Transition1.ShowSync(dtgvInformationMedicine);
             }
@@ -61,8 +61,8 @@ namespace QuanLyBanThuoc.GUI
                 ptbxInformationMedicine.Visible = false;
                 SidePanel.Height = btnMedicineBest.Height;
                 SidePanel.Top = btnMedicineBest.Top;
-                DataSet data = InformationMedicineDAO.Instance.GetListMedicineBest();
-                dtgvInformationMedicine.DataSource = data.Tables[0];
+                DataTable data = InformationMedicineDAO.Instance.GetListMedicineBest();
+                dtgvInformationMedicine.DataSource = data;
                 guna2Transition1.HideSync(dtgvInformationMedicine);
                 guna2Transition1.ShowSync(dtgvInformationMedicine);
             }
@@ -75,8 +75,8 @@ namespace QuanLyBanThuoc.GUI
             ptbxInformationMedicine.Visible = false;
             SidePanel.Height = btnMedicineEmpty.Height;
             SidePanel.Top = btnMedicineEmpty.Top;
-            DataSet data = InformationMedicineDAO.Instance.GetListMedicineEmpty();
-            dtgvInformationMedicine.DataSource = data.Tables[0];
+            DataTable data = InformationMedicineDAO.Instance.GetListMedicineEmpty();
+            dtgvInformationMedicine.DataSource = data;
             guna2Transition1.HideSync(dtgvInformationMedicine);
             guna2Transition1.ShowSync(dtgvInformationMedicine);
         }
@@ -87,8 +87,8 @@ namespace QuanLyBanThuoc.GUI
             ptbxInformationMedicine.Visible = false;
             SidePanel.Height = btnSellOut.Height;
             SidePanel.Top = btnSellOut.Top;
-            DataSet data = InformationMedicineDAO.Instance.GetListMedicineSellOut();
-            dtgvInformationMedicine.DataSource = data.Tables[0];
+            DataTable data = InformationMedicineDAO.Instance.GetListMedicineSellOut();
+            dtgvInformationMedicine.DataSource = data;
             guna2Transition1.HideSync(dtgvInformationMedicine);
             guna2Transition1.ShowSync(dtgvInformationMedicine);
         }

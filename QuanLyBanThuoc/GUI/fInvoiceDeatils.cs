@@ -31,14 +31,13 @@ namespace QuanLyBanThuoc.GUI
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            DataSet data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
-            dtgvInvoiceDetails.DataSource = data.Tables[0];
+            DataTable data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
+            dtgvInvoiceDetails.DataSource = data;
         }
         private void loadData()
         {
-            DataSet data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
-            dt = data.Tables[0];
-            dtgvInvoiceDetails.DataSource = data.Tables[0];
+            DataTable data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
+            dtgvInvoiceDetails.DataSource = data;
         }
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)

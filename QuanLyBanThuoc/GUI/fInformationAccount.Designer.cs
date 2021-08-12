@@ -53,6 +53,10 @@ namespace QuanLyBanThuoc.GUI
             this.lblValueMonth = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.lblStoreValue = new System.Windows.Forms.Label();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.lblDiagram = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.lblType = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -63,10 +67,6 @@ namespace QuanLyBanThuoc.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.elipseControl1 = new QuanLyBanThuoc.GUI.ElipseControl();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblDiagram = new System.Windows.Forms.Label();
-            this.lblAdmin = new System.Windows.Forms.Label();
-            this.lblStoreValue = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabValue.SuspendLayout();
@@ -406,6 +406,46 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(366, 491);
             this.bunifuGradientPanel2.TabIndex = 7;
             // 
+            // lblStoreValue
+            // 
+            this.lblStoreValue.AutoSize = true;
+            this.lblStoreValue.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStoreValue.Location = new System.Drawing.Point(172, 454);
+            this.lblStoreValue.Name = "lblStoreValue";
+            this.lblStoreValue.Size = new System.Drawing.Size(93, 19);
+            this.lblStoreValue.TabIndex = 24;
+            this.lblStoreValue.Text = "Store Value";
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.Location = new System.Drawing.Point(172, 416);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(58, 19);
+            this.lblAdmin.TabIndex = 23;
+            this.lblAdmin.Text = "Admin";
+            // 
+            // lblDiagram
+            // 
+            this.lblDiagram.AutoSize = true;
+            this.lblDiagram.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiagram.Location = new System.Drawing.Point(172, 378);
+            this.lblDiagram.Name = "lblDiagram";
+            this.lblDiagram.Size = new System.Drawing.Size(74, 19);
+            this.lblDiagram.TabIndex = 22;
+            this.lblDiagram.Text = "Diagram";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(31, 378);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 19);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Function Limit";
+            // 
             // lblType
             // 
             this.lblType.AutoSize = true;
@@ -495,46 +535,6 @@ namespace QuanLyBanThuoc.GUI
             // 
             this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_SLIDE;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(31, 378);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 19);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Function Limit";
-            // 
-            // lblDiagram
-            // 
-            this.lblDiagram.AutoSize = true;
-            this.lblDiagram.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiagram.Location = new System.Drawing.Point(172, 378);
-            this.lblDiagram.Name = "lblDiagram";
-            this.lblDiagram.Size = new System.Drawing.Size(74, 19);
-            this.lblDiagram.TabIndex = 22;
-            this.lblDiagram.Text = "Diagram";
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.Location = new System.Drawing.Point(172, 416);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(58, 19);
-            this.lblAdmin.TabIndex = 23;
-            this.lblAdmin.Text = "Admin";
-            // 
-            // lblStoreValue
-            // 
-            this.lblStoreValue.AutoSize = true;
-            this.lblStoreValue.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStoreValue.Location = new System.Drawing.Point(172, 454);
-            this.lblStoreValue.Name = "lblStoreValue";
-            this.lblStoreValue.Size = new System.Drawing.Size(93, 19);
-            this.lblStoreValue.TabIndex = 24;
-            this.lblStoreValue.Text = "Store Value";
-            // 
             // fInformationAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -545,6 +545,7 @@ namespace QuanLyBanThuoc.GUI
             this.Name = "fInformationAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fInformationAccount";
+            this.Load += new System.EventHandler(this.fInformationAccount_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.tabControl.ResumeLayout(false);

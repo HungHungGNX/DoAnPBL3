@@ -24,9 +24,9 @@ namespace QuanLyBanThuoc.GUI
         DataTable dt = new DataTable();
         void LoadData()
         {
-            DataSet data = InformationMedicineDAO.Instance.GetListAllMedicine();
-            dtgvMedicine.DataSource = data.Tables[0];
-            dt = data.Tables[0];
+            DataTable data = InformationMedicineDAO.Instance.GetListAllMedicine();
+            dtgvMedicine.DataSource = data;
+            dt = data;
         }
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
