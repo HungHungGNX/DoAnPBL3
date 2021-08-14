@@ -504,6 +504,10 @@
     <None Include="Resources\calendar.jpg" />
     <None Include="Resources\Information.png" />
     <None Include="Resources\Question.png" />
+    <Content Include="Resources\giaodich1.jpg" />
+    <None Include="Resources\giaodich11.jpg" />
+    <Content Include="Resources\logoyte1.jpg" />
+    <None Include="Resources\logoyte11.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

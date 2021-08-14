@@ -79,11 +79,11 @@ namespace QuanLyBanThuoc
                 {
                     case "Trống":
                         btn.BackColor = Color.Aqua;
-                        btn.Image = Image.FromFile("E://Góc Học Tập//Đồ án PBL3//Các Icon//logoyte1.jpg");
+                        btn.Image = QuanLyBanThuoc.Properties.Resources.logoyte1;
                         break;
                     default:
                         btn.BackColor = Color.LightPink;
-                        btn.Image = Image.FromFile("E://Góc Học Tập//Đồ án PBL3//Các Icon//giaodich1.jpg");
+                        btn.Image = QuanLyBanThuoc.Properties.Resources.giaodich1;
                         break;
                 }
                 flpTable.Controls.Add(btn);
@@ -206,7 +206,7 @@ namespace QuanLyBanThuoc
             }
             if (idBill == -1)
             {
-                BillDAO.Instance.InsertBill(table.Id);
+                BillDAO.Instance.InsertBill(table.Id,this.loginAccount.UserName);
                 BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxIDBill(), medicineId, count);
 
             }
@@ -240,7 +240,7 @@ namespace QuanLyBanThuoc
 
                 if (idBill == -1)
                 {
-                    BillDAO.Instance.InsertBill(table.Id);
+                    BillDAO.Instance.InsertBill(table.Id,this.loginAccount.UserName);
                     BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxIDBill(), medicineId, count);
                 }
                 else
@@ -309,7 +309,7 @@ namespace QuanLyBanThuoc
             if (frmMessageYesNo.messageCheck==true)
             {
                 frmMessageYesNo.messageCheck = false;
-                TableDAO.Instance.SwitchTable(id1, id2);
+                TableDAO.Instance.SwitchTable(id1, id2,loginAccount.UserName);
 
                 LoadTable();
             }

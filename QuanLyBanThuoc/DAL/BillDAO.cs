@@ -33,9 +33,9 @@ namespace QuanLyBanThuoc.DAL
             }
             return -1;
         }
-        public void InsertBill(int id)
+        public void InsertBill(int id,string userName)
         {
-            DataProvider.Instance.ExcuteNonQuery("exec USP_InsertBill @idTable", new object[] {id});
+            DataProvider.Instance.ExcuteNonQuery("exec USP_InsertBill @idTable , @UserName", new object[] {id,userName});
 
         }
         public int GetMaxIDBill()

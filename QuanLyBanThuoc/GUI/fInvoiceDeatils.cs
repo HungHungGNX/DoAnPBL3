@@ -47,7 +47,7 @@ namespace QuanLyBanThuoc.GUI
             if (e.KeyChar == (char)13)
             {
                 DataView dv = dt.DefaultView;
-                dv.RowFilter = string.Format("convert(DateCheckIn, 'System.String') like '%{0}%'", txtSearch.Text);
+                dv.RowFilter = string.Format("convert(DateCheckOut, 'System.String') like '%{0}%'", txtSearch.Text);
                 dtgvInvoiceDetails.DataSource = dv.ToTable();
             }
         }

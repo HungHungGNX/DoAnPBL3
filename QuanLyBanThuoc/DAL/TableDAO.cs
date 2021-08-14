@@ -28,9 +28,9 @@ namespace QuanLyBanThuoc.DAL
         {
 
         }
-        public void SwitchTable(int id1, int id2)
+        public void SwitchTable(int id1, int id2,string userName)
         {
-            DataProvider.Instance.ExcuteQuery("USP_SwitchTabel @idTable1 , @idTabel2", new object[] { id1, id2 });
+            DataProvider.Instance.ExcuteQuery("USP_SwitchTabel @idTable1 , @idTabel2 , @UserName", new object[] { id1, id2, userName });
         }
 
         public List<Table> LoadTableList()

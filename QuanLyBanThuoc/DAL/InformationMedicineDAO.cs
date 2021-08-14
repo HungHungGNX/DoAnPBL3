@@ -53,7 +53,7 @@ namespace QuanLyBanThuoc.DAL
         }
         public DataTable GetListInvoiceDetails()
         {
-            string s = "select dbo.Bill.Id as 'IDBill',dbo.Medicine.Name as 'NameMedicine',dbo.BillInfo.count as'Quantity',dbo.Medicine.Price,dbo.Medicine.Price * dbo.BillInfo.count as 'TotalMoney',dbo.Bill.DateCheckIn from dbo.Bill,dbo.BillInfo,dbo.Medicine Where dbo.Bill.Id = dbo.BillInfo.IdBill AND dbo.BillInfo.IdMedicine = dbo.Medicine.Id Order by dbo.Bill.Id";
+            string s = "select dbo.Bill.Id as 'IDBill',dbo.Medicine.Name as 'NameMedicine',dbo.BillInfo.count as'Quantity',dbo.Medicine.Price,dbo.Medicine.Price * dbo.BillInfo.count as 'TotalMoney',dbo.Bill.DateCheckOut,dbo.Bill.UserName from dbo.Bill,dbo.BillInfo,dbo.Medicine Where dbo.Bill.Id = dbo.BillInfo.IdBill AND dbo.BillInfo.IdMedicine = dbo.Medicine.Id Order by dbo.Bill.Id";
             DataTable ds = DataProvider.Instance.ExcuteQuery(s);
             return ds;
         }

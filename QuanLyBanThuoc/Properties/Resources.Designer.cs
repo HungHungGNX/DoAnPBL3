@@ -123,6 +123,16 @@ namespace QuanLyBanThuoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giaodich1 {
+            get {
+                object obj = ResourceManager.GetObject("giaodich1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hinh_nen_dien_thoai_ {
             get {
                 object obj = ResourceManager.GetObject("hinh-nen-dien-thoai-", resourceCulture);
@@ -196,6 +206,16 @@ namespace QuanLyBanThuoc.Properties {
         internal static System.Drawing.Bitmap logo_y_te_aleris {
             get {
                 object obj = ResourceManager.GetObject("logo-y-te-aleris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoyte1 {
+            get {
+                object obj = ResourceManager.GetObject("logoyte1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

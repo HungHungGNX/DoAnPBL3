@@ -31,25 +31,19 @@ namespace QuanLyBanThuoc.GUI
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMessageOK));
-            this.lblMessage = new System.Windows.Forms.Label();
-            this.btnOK = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.btnOK = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblMessage
+            // bunifuElipse1
             // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblMessage.Location = new System.Drawing.Point(235, 94);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(82, 24);
-            this.lblMessage.TabIndex = 1;
-            this.lblMessage.Text = "Message";
+            this.bunifuElipse1.ElipseRadius = 40;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // btnOK
             // 
@@ -71,17 +65,6 @@ namespace QuanLyBanThuoc.GUI
             this.btnOK.Text = "&OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // pictureBox
-            // 
-            this.pictureBox.Image = global::QuanLyBanThuoc.Properties.Resources.Information;
-            this.pictureBox.Location = new System.Drawing.Point(23, 94);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.ShadowDecoration.Parent = this.pictureBox;
-            this.pictureBox.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 0;
-            this.pictureBox.TabStop = false;
-            // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -102,10 +85,27 @@ namespace QuanLyBanThuoc.GUI
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(701, 333);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
-            // bunifuElipse1
+            // pictureBox
             // 
-            this.bunifuElipse1.ElipseRadius = 40;
-            this.bunifuElipse1.TargetControl = this;
+            this.pictureBox.Image = global::QuanLyBanThuoc.Properties.Resources.Information;
+            this.pictureBox.Location = new System.Drawing.Point(23, 94);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.ShadowDecoration.Parent = this.pictureBox;
+            this.pictureBox.Size = new System.Drawing.Size(138, 130);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblMessage.Location = new System.Drawing.Point(235, 94);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(82, 24);
+            this.lblMessage.TabIndex = 1;
+            this.lblMessage.Text = "Message";
             // 
             // frmMessageOK
             // 
@@ -118,9 +118,9 @@ namespace QuanLyBanThuoc.GUI
             this.Name = "frmMessageOK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMessageOK";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
