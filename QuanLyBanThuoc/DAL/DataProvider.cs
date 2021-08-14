@@ -10,7 +10,7 @@ namespace QuanLyBanThuoc.DAL
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectionSTR = @"Server=DESKTOP-367SKLK\SQLEXPRESS;Database=QuanLyBanThuoc;User Id=sa;pwd=tienhung091";
+        private static string connectionSTR = @"Server=DESKTOP-367SKLK\SQLEXPRESS;Database=QuanLyBanThuoc;User Id=sa;pwd=tienhung091";
 
         public static DataProvider Instance
         {

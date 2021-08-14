@@ -27,10 +27,15 @@ namespace QuanLyBanThuoc.GUI
             
        
         }
+        void MessageBoxOfMe(string Text)
+        {
+            MyMessageBox.ShowMessage(Text, "Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         private void loaDtgvDick()
         {
             DataTable data = InformationMedicineDAO.Instance.GetListSick();
             dtgvSick.DataSource = data;
+            dt = data;
             dtgvSick.Columns["Signal"].Visible = false;
             dtgvSick.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dtgvSick.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -128,13 +133,13 @@ namespace QuanLyBanThuoc.GUI
             string cure = txtCure.Text;
             if (InformationMedicineDAO.Instance.UpdateSick(id, name, signal, cure))
             {
-                MessageBox.Show("Update Success");
+                MessageBoxOfMe("Update Success");
                 loaDtgvDick();
 
             }
             else
             {
-                MessageBox.Show("Update Fail");
+                MessageBoxOfMe("Update Fail");
             }
         }
 
@@ -143,13 +148,13 @@ namespace QuanLyBanThuoc.GUI
             int id = idSick;
             if (InformationMedicineDAO.Instance.DeleteSick(id))
             {
-                MessageBox.Show("Delete Success");
+                MessageBoxOfMe("Delete Success");
                 loaDtgvDick();
 
             }
             else
             {
-                MessageBox.Show("Delete Fail");
+                MessageBoxOfMe("Delete Fail");
             }
         }
 
@@ -160,14 +165,15 @@ namespace QuanLyBanThuoc.GUI
             string cure = txtCure.Text;
             if (InformationMedicineDAO.Instance.InsertSick( name, signal, cure))
             {
-                MessageBox.Show("Insert Success");
+                MessageBoxOfMe("Insert Success");
                 loaDtgvDick();
 
             }
             else
             {
-                MessageBox.Show("Insert Fail");
+                MessageBoxOfMe("Insert Fail");
             }
         }
+        
     }
 }

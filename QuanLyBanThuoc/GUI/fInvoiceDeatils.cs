@@ -17,11 +17,12 @@ namespace QuanLyBanThuoc.GUI
         public fInvoiceDeatils()
         {
             InitializeComponent();
-            loadData();
+            
         }
         private void fInvoiceDeatils_Load(object sender, EventArgs e)
         {
             guna2AnimateWindow1.SetAnimateWindow(this, Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_CENTER, Bottom);
+            loadData();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -38,6 +39,7 @@ namespace QuanLyBanThuoc.GUI
         {
             DataTable data = InformationMedicineDAO.Instance.GetListInvoiceDetails();
             dtgvInvoiceDetails.DataSource = data;
+            dt = data;
         }
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)

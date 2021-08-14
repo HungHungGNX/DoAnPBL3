@@ -169,6 +169,7 @@ namespace QuanLyBanThuoc
         private void đăngXuâtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+            Winform.admin.Close();
         }
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -278,7 +279,6 @@ namespace QuanLyBanThuoc
             if (table == null) return;
             int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.Id);
             int discount = (int)nmDiscount.Value;
-            // double totalPrice = Convert.ToDouble(txbTotalPrice.Text);
             double totalPrice = TotalPriceForCheck;
             double finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
             finalTotalPriceforLeftover = finalTotalPrice;
